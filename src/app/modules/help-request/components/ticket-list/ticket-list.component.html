@@ -1,0 +1,56 @@
+<section class="sm:px-8 px-3 pt-4 pb-5 orders">
+    <div class="flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <div class="flex align-items-center justify-content-start"> <div class="title-dash ml-3"></div> <span class="carousel-title darkest font-bold ">{{"help.list" | translate}}</span></div>
+                <p class="mb-0 dark font-medium shopping-subtitle">{{"help.listDesc" | translate}}</p>
+            </div>
+        <button class="p-button new-btn stroke1 font-medium main-style" [routerLink]="['/support']" >{{"help.new" | translate}}</button>
+    </div>
+    <div>
+        <div class="grid  mt-5 mb-3">
+            <div class="flex lg:col-6 drop-wrapper">
+                <div class="flex flex-column">
+                    <div class="flex align-items-center">
+                        <i class="pi pi-chevron-down" style="font-size:1rem; color: #171717;"></i>
+                        <p-dropdown 
+                        [options]="sortOptions"
+                        [(ngModel)]="selectedSort"
+                        placeholder="{{'help.allTickets' | translate}}"
+                        (ngModelChange)="onSortChange($event)"
+                        id="filter-dropdown"
+                        >  
+                        <ng-template let-selectedOption pTemplate="selectedItem">
+                            <p class="my-0">
+                                @if(currentLanguage === "ar"){ <span class="order-value darkest font-semibold"> {{ selectedOption.labelAr }} </span>
+                            }@else {
+                                <span class="order-value darkest font-semibold"> {{ selectedOption.labelEn }} </span>
+                            }
+                            </p>
+                        </ng-template>
+                
+                        <ng-template let-option pTemplate="item">
+                            @if(currentLanguage === "ar"){
+                                <span>{{ option.labelAr }}</span>
+                            }@else {
+                                <span>{{ option.labelEn }}</span>
+                            }
+                        </ng-template>
+                    </p-dropdown>
+                    </div>
+                    <div class="primary-border">
+                    </div>
+            </div>
+            </div>
+            <div class="filter-btns flex lg:col-6">
+                <span class="p-input-icon-left mr-auto lg:w-7">
+                    <i class="pi pi-search"></i>
+                    <input pInputText type="text" [(ngModel)]="searchValue"  placeholder="{{'contracts.search'| translate}}  {{ordersNumber}} {{'help.ticket'| translate}}" />
+                </span>
+                <div  class="filter-container cursor-pointer flex align-items-center px-3 py-0 darkest font-regular mr-2">{{'orders.date'| translate}}</div>
+                <div  class="filter-container cursor-pointer flex align-items-center px-3 py-0 darkest font-regular mr-2">{{'help.status'| translate}}</div>
+            </div>
+        </div>
+           <app-table [dataList]="ticketsList"
+            [getActionButtons]="getActionButtons.bind(this)" />
+    </div>
+</section>

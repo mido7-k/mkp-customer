@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "./assets/images/suppliers/1.svg",
+      "supplierNameAr": "سعودي دريب",
+      "supplierNameEn": "Saudi Drip"
+    },
+    {
+      "id": 2,
+      "imageUrl": "./assets/images/suppliers/2.svg",
+      "supplierNameAr": "الجفالي",
+      "supplierNameEn": "Juffali"
+    },
+    {
+      "id": 3,
+      "imageUrl": "./assets/images/suppliers/3.svg",
+      "supplierNameAr": "الياسين الزراعية",
+      "supplierNameEn": "Yassine Agri"
+    },
+    {
+      "id": 4,
+      "imageUrl": "./assets/images/suppliers/4.svg",
+      "supplierNameAr": "الرشيد",
+      "supplierNameEn": "Al Rasheed"
+    },
+    {
+      "id": 5,
+      "imageUrl": "./assets/images/suppliers/5.svg",
+      "supplierNameAr": "المهيدب",
+      "supplierNameEn": "Al Muhaidib"
+    },
+    {
+      "id": 6,
+      "imageUrl": "./assets/images/suppliers/6.svg",
+      "supplierNameAr": "فارم كرت",
+      "supplierNameEn": "Farm Kart"
+    },
+    {
+      "id": 7,
+      "imageUrl": "./assets/images/suppliers/7.svg",
+      "supplierNameAr": "مزارع البحر الأحمر",
+      "supplierNameEn": "TAMALA"
+    },
+    {
+      "id": 8,
+      "imageUrl": "./assets/images/suppliers/8.svg",
+      "supplierNameAr": "سعودي دريب",
+      "supplierNameEn": "Saudi Drip"
+    },
+    {
+      "id": 9,
+      "imageUrl": "./assets/images/suppliers/9.svg",
+      "supplierNameAr": "الجفالي",
+      "supplierNameEn": "Juffali"
+    },
+    {
+      "id": 10,
+      "imageUrl": "./assets/images/suppliers/10.svg",
+      "supplierNameAr": "الياسين الزراعية",
+      "supplierNameEn": "Yassine Agri"
+    },
+    {
+      "id": 11,
+      "imageUrl": "./assets/images/suppliers/11.svg",
+      "supplierNameAr": "الرشيد",
+      "supplierNameEn": "Al Rasheed"
+    },
+    {
+      "id": 12,
+      "imageUrl": "./assets/images/suppliers/12.svg",
+      "supplierNameAr": "المهيدب",
+      "supplierNameEn": "Al Muhaidib"
+    },
+    {
+      "id": 13,
+      "imageUrl": "./assets/images/suppliers/13.svg",
+      "supplierNameAr": "فارم كرت",
+      "supplierNameEn": "Farm Kart"
+    }
+  ]
+  

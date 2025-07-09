@@ -1,0 +1,78 @@
+.middle-border {
+  border-left: 1px solid var(--color-yellowStrokeWeak);
+  border-right: 1px solid var(--color-yellowStrokeWeak);
+}
+
+.head-title {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.head-label {
+  font-size: 14px;
+  letter-spacing: 1.5%;
+}
+.status-value {
+  border: 1px solid var(--color-yellowStrokeWeak);
+  background-color: var(--color-stroke1);
+  border-radius: 6px;
+}
+
+.contract-number {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.005em;
+}
+
+.loan-date {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-wrapper {
+  border-radius: 12px;
+}
+
+.file-name {
+  font-weight: 600;
+  line-height: 24px;
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.new-reply{
+  border-top: 1px solid var(--color-light);
+}
+::ng-deep .ticket-details .label-wrapper p-floatlabel input[type='file'] {
+border: none;
+background-color: transparent;
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+cursor: pointer;
+}
+
+.light-label {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.upload-wrapper{
+  border: 1px solid var(--color-weakStroke);
+  border-radius: 4px;
+}
+
+.file-wrapper{
+    background-color: #F3F4F6;
+  border: 1px solid #D2D6DB;
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.err-border{
+  border: 1px solid #B42318;
+}
+.max{
+  vertical-align: middle;
+}

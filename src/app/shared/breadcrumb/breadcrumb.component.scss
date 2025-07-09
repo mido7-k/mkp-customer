@@ -1,0 +1,23 @@
+ ::ng-deep .breadcrumb chevronrighticon{
+    display: none;
+}
+
+::ng-deep .pi-home:before {
+    color: var(--color-primary);
+    margin-top: -3px;
+}
+
+::ng-deep .breadcrumb .p-breadcrumb .p-breadcrumb-list li:first-of-type .p-menuitem-link .p-menuitem-text {
+   display: inline-block;
+    color: var(--color-primary); 
+    padding-inline-start: 5px;
+    padding-top: 3px;
+  }
+
+  ::ng-deep .breadcrumb .p-breadcrumb .p-breadcrumb-list li .p-menuitem-link .p-menuitem-text{
+    color: var(--color-dark);
+    font-family: "IBM Medium";
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+  }

@@ -1,0 +1,226 @@
+<div class=" cart-wrapper">
+    <div class="cart-card  px-4 py-3 relative mb-4">
+
+        <div class="single-vendor-wrapper pb-4 mb-4 bordered-product">
+            <div class="relative  delete-icon ">
+                <img class="cursor-pointer" src="./assets/images/trash.svg" alt="trash">
+            </div>
+            <div class="flex company-wrapper py-1 px-2 mb-3">
+                <div class="ml-2 main-style darkest font-medium">{{"home.productCompany"| translate}}</div>
+                <div class="main-style darkest font-bold">{{ currentLanguage === 'ar' ? 'ناصر الزراعية' : 'Nasser agriculture' }}</div>
+            </div>
+            <div class="flex justify-content-between align-items-center mb-4">
+                <div class="flex align-items-center">
+                    <div class="ml-5"><img  src="./assets/images/tracktor.svg" alt="product"></div>
+                    <div>
+                        <p class="mt-0 mb-2 product-name font-bold darkest ">{{ currentLanguage === 'ar' ? 'تراكتور ' : 'Tracktor' }} </p>
+                        <div class="flex align-items-center">
+                            <p class="my-0 dark font-medium main-style ml-3">{{"cart.quantity"| translate}}</p>
+                            <div
+                            class="amount-controller justify-content-center align-items-center flex gap-1 py-2 px-3"
+                        >
+                            <div class="controller cursor-pointer" (click)="increment('tracktor')">
+                            <img src="./assets/images/plus.svg" alt="plus" />
+                            </div>
+                            <p class="my-0 mx-3 darkest amount">{{ tracktorAmount | number : "2.0" }}</p>
+                            <div class="cursor-pointer controller" (click)="decrement('tracktor')">
+                            <img src="./assets/images/minus.svg" alt="minus" />
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-column justify-content-end pl-8">
+                    <div class="flex align-items-start justify-content-end mb-3">
+                        @if(currentLanguage === 'ar'){
+                            <div class="product-currency">SAR</div>
+                            <div class="my-0 product-price mr-2">185,000 </div>
+                        }@else {
+                            <div class="my-0 product-price mr-2">185,000 </div>
+                            <div class="product-currency">SAR</div>
+                        }
+                </div>
+                <div class="flex header-colored align-items-center warningStrokeWeakBackground border-round-lg py-1 px-2">
+                    <img src="./assets/images/info-i.svg" alt="">
+                    <p class="my-0 darkest main-style mr-1 font-medium ml-2">
+                        {{ "cart.fundPrice" | translate }}
+                        </p>
+                        @if(currentLanguage === 'ar'){
+                            <div class="colored-currency">SAR</div>
+                            <div class="my-0 colored-price mr-1">175,000 </div>
+                        }@else {
+                            <div class="my-0 colored-price mr-1">175,000 </div>
+                        }
+                </div>
+                </div>
+            </div>
+            <div class="flex gap-1 dark main-style mb-3">
+                <p class="my-0 font-medium">{{"cart.guaranteedFund1"| translate}}</p>
+                <p class="my-0 font-bold">{{"cart.guaranteedFund2"| translate}}</p>
+                <p class="my-0 font-medium">{{"cart.guaranteedFund3"| translate}}</p>
+                <p class="my-0 font-bold ">{{"cart.guaranteedFund4"| translate}}</p>
+                <p class="my-0 font-medium">{{"cart.or"| translate}}</p>
+                <p class="my-0 font-bold">{{"cart.guaranteedFund5"| translate}}</p>
+            </div>
+            <div class="flex gap-3 flex-wrap">
+                <div class="replace-wrapper flex flex-column align-items-center py-3   cursor-pointer">
+                    <img src="./assets/images/replace.svg" alt="replace">
+                    <p class="my-2 darkest font-semibold main-style">{{"cart.change"| translate}}</p>
+                    <p class="my-0 warningText font-medium cart-navigate flex gap-1 align-items-center">{{"cart.shopping"| translate}} <img src="./assets/images/small-arrow.svg" alt=""></p>
+                </div>
+                <div class="replace-wrapper flex flex-column align-items-center py-3  cursor-pointer">
+                    <img src="./assets/images/paper.svg" alt="replace">
+                    <p class="my-2 darkest font-bold main-style">{{"cart.replace"| translate}}</p>
+                    <p class="my-0 warningText font-medium cart-navigate flex gap-1 align-items-center">{{"cart.start"| translate}} <img src="./assets/images/open.svg" alt=""></p>
+                </div>
+            </div>
+        </div>
+        <div class="single-vendor-wrapper">
+            <div class="relative delete-icon ">
+                <img class="cursor-pointer" src="./assets/images/trash.svg" alt="trash">
+            </div>
+            <div class="flex justify-content-between align-items-center mb-4">
+                <div class="flex align-items-center">
+                    <div class="ml-5"><img  src="./assets/images/cooler.svg" alt="product"></div>
+                    <div>
+                        <p class="mt-0 mb-2 product-name font-bold darkest ">{{ currentLanguage === 'ar' ? 'غرف تبريد عامة ' : 'Public cooling rooms' }} </p>
+                        <div class="flex align-items-center">
+                            <p class="my-0 dark font-medium main-style ml-3">{{"cart.quantity"| translate}}</p>
+                            <div
+                            class="amount-controller justify-content-center align-items-center flex gap-1 py-2 px-3"
+                        >
+                            <div class="controller cursor-pointer" (click)="increment('cooler')">
+                            <img src="./assets/images/plus.svg" alt="plus" />
+                            </div>
+                            <p class="my-0 mx-3 darkest amount">{{ coolerAmount | number : "2.0" }}</p>
+                            <div class="cursor-pointer controller" (click)="decrement('cooler')">
+                            <img src="./assets/images/minus.svg" alt="minus" />
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-column justify-content-end pl-8">
+                    <div class="flex align-items-start justify-content-end mb-3">
+                        @if(currentLanguage === 'ar'){
+                            <div class="product-currency">SAR</div>
+                            <div class="my-0 product-price mr-2">60,000 </div>
+                        }@else {
+                            <div class="my-0 product-price mr-2">60,000 </div>
+                            <div class="product-currency">SAR</div>
+                        }
+                </div>
+                <div class="flex header-colored align-items-center warningStrokeWeakBackground border-round-lg py-1 px-2">
+                    <img src="./assets/images/info-i.svg" alt="">
+                    <p class="my-0 darkest main-style mr-1 font-medium ml-2">
+                        {{ "cart.fundPrice" | translate }}
+                        </p>
+                        @if(currentLanguage === 'ar'){
+                            <div class="colored-currency">SAR</div>
+                            <div class="my-0 colored-price mr-1">50,000 </div>
+                        }@else {
+                            <div class="my-0 colored-price mr-1">50,000 </div>
+                        }
+                </div>
+                </div>
+            </div>
+            <div class="flex gap-1 dark main-style mb-3">
+                <p class="my-0 font-medium">{{"cart.guaranteedFund1"| translate}}</p>
+                <p class="my-0 font-bold">{{"cart.guaranteedFund2"| translate}}</p>
+                <p class="my-0 font-medium">{{"cart.guaranteedFund3"| translate}}</p>
+                <p class="my-0 font-bold ">{{"cart.guaranteedFund4"| translate}}</p>
+                <p class="my-0 font-medium">{{"cart.or"| translate}}</p>
+                <p class="my-0 font-bold">{{"cart.guaranteedFund5"| translate}}</p>
+            </div>
+            <div class="flex gap-3 flex-wrap">
+                <div class="replace-wrapper flex flex-column align-items-center py-3   cursor-pointer">
+                    <img src="./assets/images/replace.svg" alt="replace">
+                    <p class="my-2 darkest font-semibold main-style">{{"cart.change"| translate}}</p>
+                    <p class="my-0 warningText font-medium cart-navigate flex gap-1 align-items-center">{{"cart.shopping"| translate}} <img src="./assets/images/small-arrow.svg" alt=""></p>
+                </div>
+                <div class="replace-wrapper flex flex-column align-items-center py-3  cursor-pointer">
+                    <img src="./assets/images/paper.svg" alt="replace">
+                    <p class="my-2 darkest font-bold main-style">{{"cart.replace"| translate}}</p>
+                    <p class="my-0 warningText font-medium cart-navigate flex gap-1 align-items-center">{{"cart.start"| translate}} <img src="./assets/images/open.svg" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart-card  px-4 py-3 relative mb-4">
+
+        <div class="single-vendor-wrapper">
+            <div class="relative  delete-icon ">
+                <img class="cursor-pointer" src="./assets/images/trash.svg" alt="trash">
+            </div>
+            <div class="flex company-wrapper py-1 px-2 mb-3">
+                <div class="ml-2 main-style darkest font-medium">{{"home.productCompany"| translate}}</div>
+                <div class="main-style darkest font-bold">{{ currentLanguage === 'ar' ? 'نصر' : 'Nasr' }}</div>
+            </div>
+            <div class="flex justify-content-between align-items-center mb-4">
+                <div class="flex align-items-center">
+                    <div class="ml-5"><img  src="./assets/images/harvester.svg" alt="product"></div>
+                    <div>
+                        <p class="mt-0 mb-2 product-name font-bold darkest ">{{ currentLanguage === 'ar' ? 'حصادات ' : 'Harvesters' }} </p>
+                        <div class="flex align-items-center">
+                            <p class="my-0 dark font-medium main-style ml-3">{{"cart.quantity"| translate}}</p>
+                            <div
+                            class="amount-controller justify-content-center align-items-center flex gap-1 py-2 px-3"
+                        >
+                            <div class="controller cursor-pointer" (click)="increment('harvester')">
+                            <img src="./assets/images/plus.svg" alt="plus" />
+                            </div>
+                            <p class="my-0 mx-3 darkest amount">{{ harvesterAmount | number : "2.0" }}</p>
+                            <div class="cursor-pointer controller" (click)="decrement('harvester')">
+                            <img src="./assets/images/minus.svg" alt="minus" />
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-column justify-content-end pl-8">
+                    <div class="flex align-items-start justify-content-end mb-3">
+                        @if(currentLanguage === 'ar'){
+                            <div class="product-currency">SAR</div>
+                            <div class="my-0 product-price mr-2">60,000 </div>
+                        }@else {
+                            <div class="my-0 product-price mr-2">60,000 </div>
+                            <div class="product-currency">SAR</div>
+                        }
+                </div>
+                <div class="flex header-colored align-items-center warningStrokeWeakBackground border-round-lg py-1 px-2">
+                    <img src="./assets/images/info-i.svg" alt="">
+                    <p class="my-0 darkest main-style mr-1 font-medium ml-2">
+                        {{ "cart.fundPrice" | translate }}
+                        </p>
+                        @if(currentLanguage === 'ar'){
+                            <div class="colored-currency">SAR</div>
+                            <div class="my-0 colored-price mr-1">50,000 </div>
+                        }@else {
+                            <div class="my-0 colored-price mr-1">50,000 </div>
+                        }
+                </div>
+                </div>
+            </div>
+            <div class="flex gap-1 dark main-style mb-3">
+                <p class="my-0 font-medium">{{"cart.guaranteedFund1"| translate}}</p>
+                <p class="my-0 font-bold">{{"cart.guaranteedFund2"| translate}}</p>
+                <p class="my-0 font-medium">{{"cart.guaranteedFund3"| translate}}</p>
+                <p class="my-0 font-bold ">{{"cart.guaranteedFund4"| translate}}</p>
+                <p class="my-0 font-medium">{{"cart.or"| translate}}</p>
+                <p class="my-0 font-bold">{{"cart.guaranteedFund5"| translate}}</p>
+            </div>
+            <div class="flex gap-3 flex-wrap">
+                <div class="replace-wrapper flex flex-column align-items-center py-3   cursor-pointer">
+                    <img src="./assets/images/replace.svg" alt="replace">
+                    <p class="my-2 darkest font-semibold main-style">{{"cart.change"| translate}}</p>
+                    <p class="my-0 warningText font-medium cart-navigate flex gap-1 align-items-center">{{"cart.shopping"| translate}} <img src="./assets/images/small-arrow.svg" alt=""></p>
+                </div>
+                <div class="replace-wrapper flex flex-column align-items-center py-3  cursor-pointer">
+                    <img src="./assets/images/paper.svg" alt="replace">
+                    <p class="my-2 darkest font-bold main-style">{{"cart.replace"| translate}}</p>
+                    <p class="my-0 warningText font-medium cart-navigate flex gap-1 align-items-center">{{"cart.start"| translate}} <img src="./assets/images/open.svg" alt=""></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

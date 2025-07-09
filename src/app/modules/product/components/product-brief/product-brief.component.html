@@ -1,0 +1,69 @@
+<div class="product-brief">
+  <h4 class="product-name darkest font-bold mb-1 mt-3">
+    {{
+      currentLanguage === "ar" ? product?.productNameAr : product?.productNameEn
+    }}
+  </h4>
+  <p class="dark font-medium product-desc">
+    تمثل جراراتنا الزراعية خيارًا ممتازًا لتحسين كفاءة العمل في المزارع الكبيرة.
+    توفر هذه الجرارات قوة عالية، مما يجعلها مثالية للعديد من التطبيقات الزراعية
+    مثل الحرث، الزراعة، ونقل المحاصيل. تتميز بتصميم التطبيقات الزراعية مثل
+    الحرث، الزراعة، ونقل المحاصيل. تتميز بتصميم أنها مزودة بأحدث التقنيات لتحسين
+    استهلاك الوقود وتقليل الانبعاثات.
+  </p>
+  <div class="flex vendor-wrapper align-items-center py-2">
+    <div class="vendor-img mr-2 ml-3 p-2">
+      <img src="./assets/images/vendor.svg" alt="vendor" />
+    </div>
+    <p class=" dark font-regular main-style-15 ml-2">
+      {{ "home.productCompany" | translate }}
+    </p>
+    <p class=" dark font-semibold main-style-15">
+      {{
+        currentLanguage === "ar" ? product?.vendorNameAr : product?.vendorNameEn
+      }}
+    </p>
+  </div>
+
+  <div class="flex justify-content-between flex-wrap amount-price my-4">
+    <div class="flex align-items-center darkest price-wrapper">
+      <span class="currency inline-block pt-3">SAR</span>
+      <div class="price mr-2 my-0">{{ product?.price }}</div>
+    </div>
+    <div
+      class="amount-controller justify-content-center align-items-center flex gap-4 py-2 px-4 w-12 xl:w-5"
+    >
+      <div class="controller cursor-pointer" (click)="increment()">
+        <img src="./assets/images/plus.svg" alt="plus" />
+      </div>
+      <p class="my-0 mx-3 darkest amount">{{ amount | number : "2.0" }}</p>
+      <div class="cursor-pointer controller" (click)="decrement()">
+        <img src="./assets/images/minus.svg" alt="minus" />
+      </div>
+    </div>
+  </div>
+  <div class="flex lg:flex-nowrap flex-wrap justify-content-center gap-4 buttons-container w-12 mb-4">
+    <button   [routerLink]="'/cart'"
+      class="p-button buy-btn flex justify-content-center align-items-center w-12 dark font-medium py-1"
+    >
+      {{ "product.buy" | translate }}
+    </button>
+    <button
+      class="p-button primary cart-btn flex justify-content-center align-items-center font-medium stroke1 w-12 py-1"
+    >
+      <span class="inline-block ml-2">{{ "product.addCart" | translate }}</span>
+      <i class="pi pi-shopping-cart"></i>
+    </button>
+  </div>
+  <div class="pay-wrapper p-3">
+    <p class="mt-0 mb-2 safe-pay font-medium darkest">
+      {{ "product.guarantee" | translate }}
+    </p>
+    <div class="flex flex-wrap align-items-center justify-content-start gap-3">
+      <img src="./assets/images/sdad.svg" alt="sdad" />
+      <img src="./assets/images/mada.svg" alt="mada" />
+      <img src="./assets/images/visa.svg" alt="visa" />
+      <img src="./assets/images/master-card.svg" alt="master-card" />
+    </div>
+  </div>
+</div>

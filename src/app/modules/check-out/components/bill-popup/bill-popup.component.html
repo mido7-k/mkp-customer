@@ -1,0 +1,16 @@
+
+  <div class="header-popup-banner bg-success" [class]="status" ></div>
+    <img [src]="imagePath" alt="Invoice Image" class="header-popup-image" />
+    <p class="mt-3 mb-2 invoice-created font-semibold darkest">{{ "checkout.invoiceCreated" | translate }}</p>
+    <p class="mt-0 mb-2 main-style-15 font-regular dark">{{ "checkout.plzPay" | translate }}</p>
+    <div class="flex gap-2 main-style-15 font-regular dark mb-2">
+      <p class="my-0">{{ "checkout.invoiceNumber" | translate }}</p>
+       <p class="my-0 main-p text-nowrap font-bold" #invoiceText>{{ invoice }}</p>
+       <img class="cursor-pointer" src="./assets/images/clipboard.svg" alt="clipboard" (click)="copyInvoice(invoiceText)">
+    </div>
+    <div class="main-style-15 font-regular dark flex gap-2 mb-3">
+      <p class="my-0">{{ "checkout.remainTime" | translate }}</p>
+      <p class="my-0 main-p text-nowrap font-bold "> 5<span class="inline-block mr-1">{{ "checkout.days" | translate }}</span></p>
+    </div>
+
+    <button class="p-button close-btn flex justify-content-center align-items-center darkest font-medium w-12" (click)="closeDialog()">{{ "checkout.close" | translate }}</button>

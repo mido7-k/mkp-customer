@@ -1,0 +1,15 @@
+    <section class="sm:px-8 px-3 pt-4 pb-5">
+        <div class="flex align-items-center justify-content-start">
+          <div class="title-dash ml-3"></div>
+          <span class="carousel-title darkest font-bold">{{ "shopping.shopping" | translate }}</span>
+        </div>
+      <p class="dark font-regular main-style-15">{{ "shopping.discoverNewest" | translate }}</p>
+      <div class="grid justify-content-between">
+        <div class="md:col-3 col-6 xl:col-2">
+            <app-filters />
+        </div>
+        <div class="col-12 md:col-9 xl:col-10">
+            <app-product-with-pagination />
+        </div>
+      </div>
+    </section>

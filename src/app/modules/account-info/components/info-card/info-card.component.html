@@ -1,0 +1,54 @@
+<div class="grid md:flex-row flex-column">
+    <div class="md:col-6">
+        <div class="info-border border-round-xl">
+            <div class="info-header flex justify-content-between align-items-center px-4"> 
+                <div class="darkest main-style font-semibold ml-4">{{"accountInfo.personalInfo" | translate }}</div>
+                @if(!mobile){<div class="flex justify-content-between header-colored align-items-center warningStrokeWeakBackground border-round-lg py-1 px-2">
+                    <img src="./assets/images/warning-i.svg" alt="">
+                    <p class="my-0 mr-1 darkest card-header-p font-medium ">
+                        {{ "accountInfo.addPhoneMail" | translate }}
+                        </p>
+                </div>}
+            </div>
+            <div class="p-4 flex flex-column align-items-start">
+                <div class="flex mb-3 ">
+                    <div class="ml-3"><img src="./assets/images/avatar.svg" alt="avatar"></div>
+                    <div>
+                        <p class="name-card font-regular my-0"> محمد الدوسري</p>
+                        <p class="my-0 font-regular main-style location-card">رياض، سعودية</p>
+                    </div>
+                </div>
+                <div class="main-style-15 font-regular mb-4">
+                    <div (click)="openLinkDialog()" class="mb-2 darkest cursor-pointer flex align-items-center">{{ "accountInfo.phoneNumber" | translate }}: <span >{{ mobile }}</span> @if(mobile){<img src="./assets/images/check-i.svg"  alt="icon">} </div>
+                    <div (click)="openLinkDialog()" class="darkest cursor-pointer flex align-items-center">{{ "accountInfo.Email" | translate }}: <span >{{ email }}</span> @if(mobile){<img src="./assets/images/warning-i.svg"  alt="icon" [pTooltip]="tooltipContent" tooltipPosition="left">}</div>
+                    <ng-template #tooltipContent>
+                        <div class="flex align-items-start justify-cotent-start gap-2">
+
+                    <img src="./assets/images/dark-question.svg" alt="icon">
+                    <div class="flex flex-column">
+                        <p class="font-semibold main-style mt-0 mb-2 ">{{ "accountInfo.noVerify" | translate }}</p>
+                        <p class="my-0 font-regular main-style">{{ "accountInfo.subNoVerify" | translate }}</p>
+                    </div>
+                        </div>
+                    </ng-template>
+                </div>
+                <button (click)="showAddDataDialog()" class="changeLocation mt-1 main-style font-medium dark cursor-pointer">{{ "accountInfo.addData" | translate }}</button>
+            </div>
+        </div>
+    </div>
+    <div class="md:col-6">
+        <div class="info-border border-round-xl">
+            <div class="info-header flex justify-content-start align-items-center px-4"> 
+                <div class="darkest main-style font-semibold">{{"accountInfo.defineLocation" | translate }}</div>
+            </div>
+            <div class="p-4 flex flex-column align-items-start">
+                <img src="./assets/images/location-line.svg" alt="location">
+                        <p class="main-style font-regular mb-0 darkest"> محمد الدوسري</p>
+                        <p class="mt-2 main-style font-medium dark mb-5">حي العقيق، شارع الأطلال- المبنى 7454 - رقم الوحدة 12  - الرمز 
+                            البريدي 19827  - الرياض, المملكة العربية السعودية 
+                        </p>
+                     <button class="changeLocation  main-style font-medium dark cursor-pointer" routerLink="/address">{{ "accountInfo.changeLocation" | translate }}</button>
+            </div>
+        </div>
+    </div>
+</div>

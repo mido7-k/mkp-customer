@@ -1,0 +1,101 @@
+.cart-btn {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  height: 48px;
+}
+
+.cart-btn:disabled{
+    background-color: var(--color-lighter);
+    color: var(--color-weakStroke);
+    border: none;
+}
+
+.prices-container {
+  border-radius: 6px;
+  border: 1px solid var(--color-light);
+  background-color: var(--color-lightest);
+}
+
+.total-price {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #191c1f;
+}
+
+.bordered-prices {
+  border-bottom: 1px solid var(--color-light);
+}
+
+
+
+.fund-price {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.currency-price {
+  font-size: 11px;
+}
+
+.rest-price {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+
+.fund-price-rest {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+}
+
+.currency-price-rest {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-wrapper {
+  width: 64px;
+  height: 64px;
+}
+
+.product-name {
+  color: #191c1f;
+}
+
+.amount {
+  font-family: Segoe UI;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5f6c72;
+}
+
+.product-price {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--color-yellowText);
+}
+.currency {
+  font-family: Segoe UI;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-yellowText);
+}
+
+.product-item{
+    margin-bottom: 28px;
+}
+
+
+.product-item-last{
+    margin-bottom: 28px;
+}

@@ -1,0 +1,72 @@
+
+.popup-header{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.005em; 
+}
+
+.popup-desc{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+::ng-deep .input-wrapper p-inputOtp#otpInput input{
+    border: 1px solid var(--color-medium);
+}
+
+
+
+.primary-btn {
+    width: 100% !important;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    border-radius: 8px;
+}
+
+.primary-btn:disabled {
+    opacity: 0.6;
+}
+
+
+.sendAgain{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+.mobileNumber{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.timer{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.015em;
+}
+
+
+.header-popup-caution{
+    // position: absolute;
+    top: 16px;
+    // width: 100%;
+    // right: 5%;
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: var(--color-warningFill);
+    
+}
+
+// ::ng-deep  div.p-dialog-content:has(.header-popup-caution) .p-dialog .p-dialog-header{
+//     padding-top: 56px;
+// }
+
+
+// div.p-dialog-content:has(.header-popup-caution) .header-popup-image{
+//     top: 53px;
+// }

@@ -1,0 +1,162 @@
+<div *ngIf="dataList.length === 0" class="mt-3 table-container shadow-raised pt-5 px-4 mb-8">
+  <div class="flex justify-content-between align-items-center mb-5">
+    <div class="requests-folder font-bold darkest">{{ "accountInfo.requestsFolder" | translate }}</div>
+    <div class="flex align-items-center show-requests font-semibold main-style cursor-pointer yellowText" [routerLink]="['/orders']"  >
+      <div class="ml-3">{{ "accountInfo.allRequests" | translate }}</div>
+      <img src="./assets/images/arrowLeft.svg" alt="arrow">
+    </div>
+  </div>
+  <div class="text-center darkest no-data font-regular mb-5 flex align-items-center justify-content-center main-style-15">
+    {{ "accountInfo.noData" | translate }}
+  </div>
+</div>
+
+<div *ngIf="dataList.length > 0" class="custom-table">
+  <p-table
+    [value]="dataList"
+    [rows]="4"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [rowsPerPageOptions]="[5, 10, 20]"
+    (onPage)="paginate($event)"
+    [paginator]="true"
+  >
+    <ng-template pTemplate="header">
+          @if(dataList[0].contractNumber){ 
+            <tr>
+            <th style="width: 10%;"><span class="inline-block ml-1 ">#</span> <span>{{ currentLanguage === 'ar' ? 'رقم العقد' : 'Contract Number' }}</span></th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'نوع القرض' : 'Loan Type' }}</th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'تاريخ العقد' : 'Contract Date' }}</th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'قيمة العقد' : 'Contract Value' }}</th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'عدد الغايات' : 'Purposes number' }}</th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'الحالة' : 'Status' }}</th>
+            <th >{{ currentLanguage === 'ar' ? '' : '' }}</th>
+          </tr>
+        }
+        @if(dataList[0].orderNumber){ 
+          <tr>
+            <th style="width: 10%;"><span class="inline-block ml-1 ">#</span> <span>{{ currentLanguage === 'ar' ? 'رقم الطلب' : 'Order Number' }}</span></th>
+            <th style="width: 15%;" pSortableColumn="orderValue">
+              {{ currentLanguage === 'ar' ? 'قيمة الطلب' : 'Order Value' }}
+              <p-sortIcon field="orderValue"></p-sortIcon>
+            </th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'تاريخ الطلب' : 'Order Date' }}</th>
+            <th style="width: 15%;" pSortableColumn="productsNumber" >
+              {{ currentLanguage === 'ar' ? 'عدد المنتجات' : 'Number of Products' }}
+              <p-sortIcon field="productsNumber"></p-sortIcon>
+
+            </th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'حالة الطلب' : 'Order Status' }}</th>
+            <th>{{ currentLanguage === 'ar' ? '' : '' }}</th>
+          </tr>
+      }
+        @if(dataList[0].priority){ 
+          <tr>
+            <th style="width: 10%;"><span class="inline-block ml-1 ">#</span> <span>{{ currentLanguage === 'ar' ? 'رقم التذكرة' : 'Ticket Number' }}</span></th>
+            <th style="width: 10%;">{{ currentLanguage === 'ar' ? 'الاسم الكامل' : 'Full name' }}</th>
+            <th style="width: 10%;">{{ currentLanguage === 'ar' ? 'الإيميل' : 'Email' }}</th>
+            <th style="width: 10%;">{{ currentLanguage === 'ar' ? 'الموضوع' : 'Subject' }}</th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'الأولوية' : 'Priority' }}</th>
+            <th style="width: 15%;" >
+              {{ currentLanguage === 'ar' ? 'التاريخ' : 'Date' }}
+            </th>
+            <th style="width: 15%;">{{ currentLanguage === 'ar' ? 'الحالة' : 'Status' }}</th>
+            <th>{{ currentLanguage === 'ar' ? '' : '' }}</th>
+          </tr>
+      }
+    </ng-template>
+    <ng-template pTemplate="body" let-item>
+       @if(item.priority){ <tr>
+        <td>{{ item.ticketNumber[currentLanguage] }}</td>
+       <td>{{ item.fullName[currentLanguage] }}</td>
+       <td>{{ item.email[currentLanguage] }}</td>
+       <td>{{ item.subject[currentLanguage] }}</td>
+       <td>{{ item.priority[currentLanguage] }}</td>
+       <td>{{ item.date[currentLanguage] }}</td>
+         <td >
+          <p-tag [rounded]="true" [class]="item.status.en ==='Completed'? 'success': 'danger'">
+            <div class="flex align-items-center gap-2 px-1">
+                <i class="pi pi-circle-on"></i>
+                <span>
+                  {{ item.status[currentLanguage] }}
+                </span>
+            </div>
+        </p-tag>
+         </td>
+         <td>
+          <button
+          class="flex align-items-center cursor-pointer"
+          *ngFor="let action of getActionButtons(item)"
+          [ngClass]="action.class"
+          (click)="action.func(item.ticketNumber.ar)"
+        >
+        <img  [src]="action.imgPath" alt="eye">
+          <span class="inline-block mr-2">{{ action.title | translate }}</span>
+        </button>
+         </td>
+         </tr>
+      }
+      @if(item.orderNumber){ <tr>
+        <td>{{ item.orderNumber[currentLanguage] }}</td>
+       <td>{{ item.orderValue[currentLanguage] }}</td>
+       <td>{{ item.orderDate[currentLanguage] }}</td>
+       <td>{{ item.numberOfProducts[currentLanguage] }}</td>
+         <td >
+        
+          <p-tag [rounded]="true" [class]="item.status.en ==='Completed'? 'success': 'danger'">
+            <div class="flex align-items-center gap-2 px-1">
+                <i class="pi pi-circle-on"></i>
+                <span>
+                  {{ item.status[currentLanguage] }}
+                </span>
+            </div>
+        </p-tag>
+         </td>
+         <td>
+          <button
+          class="flex align-items-center cursor-pointer"
+          *ngFor="let action of getActionButtons(item)"
+          [ngClass]="action.class"
+          (click)="action.func(item.orderNumber.en)"
+        >
+        <img  [src]="action.imgPath" alt="eye">
+          <span class="inline-block mr-2">{{ action.title | translate }}</span>
+        </button>
+         </td>
+         </tr>
+      }
+      @if(item.contractNumber){<tr>
+        <td>{{ item.contractNumber[currentLanguage] }}</td>
+         <td>{{ item.loanType[currentLanguage] }}</td>
+        <td>{{ item.contractDate[currentLanguage] }}</td>
+         <td>{{ item.contractValue[currentLanguage] }}</td>
+         <td>{{ item.numberOfInstallments[currentLanguage] }}</td>
+
+         <td >
+          <p-tag [rounded]="true" [class]="item.status.en ==='Completed'? 'success': 'danger'">
+            <div class="flex align-items-center gap-2 px-1">
+                <i class="pi pi-circle-on"></i>
+                <span>
+                  {{ item.status[currentLanguage] }}
+                </span>
+            </div>
+        </p-tag>
+
+         </td>
+
+         <td>
+           <button 
+               class="flex align-items-center cursor-pointer mr-2 "
+               *ngFor="let action of actionButtons"
+               [ngClass]="action.class"
+               (click)="action.func(item.contractNumber.en)"
+             >
+                <img  [src]="action.imgPath" alt="eye">
+               <!-- <i [class]="'pi ' + action.icon"></i> -->
+               <span class="inline-block mr-2">{{ action.title | translate }}</span>
+         </button>
+         </td>
+       </tr>
+      }
+     </ng-template>
+  </p-table>
+</div>

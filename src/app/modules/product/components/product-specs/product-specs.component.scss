@@ -1,0 +1,46 @@
+.rate-product{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+}
+
+
+.specs-wrapper{
+    border: 1px solid var(--color-light);
+    border-radius: 8px;
+}
+
+.spec-data{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+.lighter-bg{
+    background-color: var(--color-lightest);
+}
+
+.border-spec{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.first-border{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.last-border{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+.first-spec-border{
+    border-top-right-radius: 8px;
+}
+
+
+.last-spec-border{
+    border-bottom-right-radius: 8px;
+}

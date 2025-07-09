@@ -1,0 +1,14 @@
+
+<div class="header-popup-banner bg-success" ></div>
+<img src="./assets/images/popup-check.svg" alt="Invoice Image" class="header-popup-image" />
+<p class="mt-4 mb-2 invoice-created font-semibold darkest">{{ title | translate }}</p>
+<p class="mt-0 mb-3 helper-p font-regular dark">{{ subTitle | translate }}</p>
+<div class="second-border">
+    <p class="mt-4 mb-2 font-semibold darkest headers">{{ "help.responseDate" | translate }}</p>
+    <p class="mt-0 mb-3 helper-p font-regular dark">{{ today | date:'EEEE، d MMMM y' : 'ar'  }}</p>
+</div>
+<p class="mt-4 mb-2 font-semibold darkest headers">{{ "help.msg" | translate }}</p>
+<p class="mt-0 mb-3 helper-p font-regular dark">{{ msg | translate }}</p>
+
+
+<button class="p-button close-btn flex justify-content-center align-items-center darkest font-medium w-12" (click)="closeDialog()">{{ "checkout.close" | translate }}</button>

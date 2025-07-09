@@ -1,0 +1,84 @@
+.help-header {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.005em;
+}
+
+.static-data {
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.new-ticket-wrapper {
+  background-color: var(--color-lightest);
+  border-radius: 10px;
+}
+
+.new-ticket-header {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.005em;
+}
+
+::ng-deep .help-request .label-wrapper p-floatlabel input {
+  width: 100%;
+  height: 32px;
+}
+
+::ng-deep .help-request .label-wrapper p-floatlabel input:disabled {
+  width: 100%;
+  height: 32px;
+  color: var(--color-weakStroke);
+  border: 1px solid var(--color-light);
+}
+
+::ng-deep .help-request .label-wrapper p-floatlabel .p-dropdown {
+  width: 100%;
+  height: 32px;
+  border: 1px solid var(--color-weakStroke);
+}
+
+::ng-deep .help-request .label-wrapper p-floatlabel .p-dropdown .p-inputtext {
+    padding:3px 0.75rem;
+}
+
+
+//upload file
+
+::ng-deep .help-request .label-wrapper p-floatlabel input[type='file'] {
+border: none;
+background-color: transparent;
+position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+cursor: pointer;
+}
+
+.light-label {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.upload-wrapper{
+  background-color: #F3F4F6;
+  border: 2px dashed #D2D6DB;
+  border-radius: 4px;
+}
+
+.drag{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.file-wrapper{
+    background-color: #F3F4F6;
+  border: 1px solid #D2D6DB;
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.err-border{
+  border: 1px solid #B42318;
+}

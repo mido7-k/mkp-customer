@@ -1,0 +1,50 @@
+<section class="sm:px-8 px-3 pt-4 pb-5 orders">
+    <div class="flex align-items-center justify-content-start"> <div class="title-dash ml-3"></div> <span class="carousel-title darkest font-bold ">{{"orders.list" | translate}}</span></div>
+    <p class="mb-0 dark font-medium shopping-subtitle">{{"orders.desc" | translate}}</p>
+    <div>
+        <div class="grid  mt-5 mb-3">
+            <div class="flex lg:col-6 drop-wrapper">
+                <div class="flex flex-column">
+                    <div class="flex align-items-center">
+                        <i class="pi pi-chevron-down" style="font-size:1rem; color: #171717;"></i>
+                        <p-dropdown 
+                        [options]="sortOptions"
+                        [(ngModel)]="selectedSort"
+                        placeholder="{{'orders.allOrders' | translate}}"
+                        (ngModelChange)="onSortChange($event)"
+                        id="filter-dropdown"
+                        >  
+                        <ng-template let-selectedOption pTemplate="selectedItem">
+                            <p class="my-0">
+                                @if(currentLanguage === "ar"){ <span class="order-value darkest font-semibold"> {{ selectedOption.labelAr }} </span>
+                            }@else {
+                                <span class="order-value darkest font-semibold"> {{ selectedOption.labelEn }} </span>
+                            }
+                            </p>
+                        </ng-template>
+                
+                        <ng-template let-option pTemplate="item">
+                            @if(currentLanguage === "ar"){
+                                <span>{{ option.labelAr }}</span>
+                            }@else {
+                                <span>{{ option.labelEn }}</span>
+                            }
+                        </ng-template>
+                    </p-dropdown>
+                    </div>
+                    <div class="primary-border">
+                    </div>
+            </div>
+            </div>
+            <div class="filter-btns flex lg:col-6">
+                <span class="p-input-icon-left ml-auto flex-grow-1">
+                    <i class="pi pi-search"></i>
+                    <input pInputText type="text" [(ngModel)]="searchValue"  placeholder="{{'contracts.search'| translate}}  {{ordersNumber}} {{'contracts.contract'| translate}}" />
+                </span>
+                <div  class="filter-container cursor-pointer flex align-items-center px-3 py-0 darkest font-regular mr-2">{{'orders.date'| translate}}</div>
+            </div>
+        </div>
+           <app-table [dataList]="ordersList"
+            [getActionButtons]="getActionButtons.bind(this)" />
+    </div>
+</section>

@@ -1,0 +1,61 @@
+.rate-product{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.005em;
+}
+
+.secondary-btn{
+    width: unset;
+    margin-inline-start: 0;
+
+    &:hover{
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    }
+}
+.rating-value{
+    font-family: Segoe UI;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+.user-rating{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.075em;
+    font-weight: 500;
+}
+
+.all-rates{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.015em;
+}
+
+.all-rates-value {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+.rate-value{
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+.progress-number{
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}

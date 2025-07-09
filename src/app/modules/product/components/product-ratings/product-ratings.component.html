@@ -1,0 +1,39 @@
+<div class="product-ratings px-4">
+    <p class="darkest font-bold rate-product mb-3">
+        {{"product.CustomerRating" | translate}}
+    </p>
+    <div class="flex flex-wrap justify-content-between" [class]="rated? 'mb-4 pb-1': ''">
+
+            <div>
+                @if(rated){ <p class="mt-0 mb-3 font-semibold dark main-style-15"> {{ "product.yourRate" | translate }}</p>}
+              <div class="flex align-items-center gap-2">
+                <p-rating dir="ltr" [(ngModel)]="value" [readonly]="rated" [cancel]="false" />
+             @if(rated){<div class="user-rating dark flex align-items-center gap-1"> <span>{{value | number:'1.1-1' }}</span>  <span>{{ "product.of" | translate }}</span></div>}
+              </div>
+              @if(!rated){<button (click)="setRated()" [disabled]="!value"
+                class="p-button secondary-btn flex justify-content-center align-items-center dark font-medium py-1 mt-1 mb-4"
+            >
+                {{ "product.rateProduct" | translate }}
+            </button>}
+            </div>
+        <div>
+        <p class="mt-0 mb-3 rating-value darkest text-left">{{rating}}</p>
+
+            <p-rating dir="ltr" [(ngModel)]="rating" [readonly]="true" [cancel]="false" />
+        </div>
+    </div>
+    <div class="flex align-items-end gap-1 main-style font-medium  darkest  mb-3">
+        <p class="main-style-value my-0">{{totalRatings}}</p>
+        <p class="my-0 font-regular main-style-15">  {{ "product.rate" | translate }}</p>
+    </div>
+    @for (rate of ratings; track rate.rateNumber) {
+        <div class="flex gap-3 mb-3">
+
+            <div class="flex gap-1 align-items-center"><span class="progress-number darkest">{{rate.rateNumber}}</span> <img [src]="rate.image" alt="star"></div>
+            <div class="w-12">
+                <p-progressBar [value]="rate.value" [showValue]="false" [color]="rate.color" [style]="{ height: '20px' }"/>
+            </div>
+            <div class="rate-value darkest">{{rate.value | number : "2.0" }}%</div>
+        </div>
+}
+</div>

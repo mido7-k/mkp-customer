@@ -1,0 +1,89 @@
+.contract-number{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+}
+
+.contract-value{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+}
+
+.readonly-price{
+    border: 1px solid var(--color-yellowStrokeWeak);
+    border-radius: 6px;
+    background-color: var(--color-warningFill);
+}
+
+.first-value{
+    border-left: 1px solid var(--color-yellowStrokeWeak);
+    padding-inline-end: 11px;
+}
+
+.second-value{
+    margin-inline-start: 11px;
+}
+
+.read-label{
+    margin-inline-end: 12px;
+}
+
+.read-value{
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.62px;
+    letter-spacing: 0.10000000149011612px;
+
+}
+
+.cart-btn{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    height: 48px;
+}
+
+.prices-container{
+ border-radius: 6px;
+ border: 1px solid var(--color-light);  
+ background-color: var(--color-lightest); 
+}
+
+.total-price{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    color: #191C1F;
+}
+
+.bordered-prices{
+    border-bottom: 1px solid var(--color-light);
+}
+
+.fund-price{
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+}
+
+.currency-price{
+    font-size: 11px;
+}
+
+.rest-price{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+.fund-price-rest{
+    font-family: Segoe UI;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.015em; 
+}

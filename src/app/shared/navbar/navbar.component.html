@@ -1,0 +1,135 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<div class="card">
+  <p-menubar>
+    <ng-template pTemplate="start">
+      <div class="flex flex-column sm:pr-8 pr-3">
+        <div 
+          class="flex align-items-center justify-content-end  big-screen cursor-pointer"
+        >
+        <img src="assets/images/logo-big.svg" alt="logo"  (click)="navigateHome()"/>
+               <div class="flex flex-column user-wrapper ml-3 sm:mr-6 cursor-pointer" (click)="showAddress()"  #triggerAddress>
+                 <div class="flex align-items-end">
+                   <img
+                   src="assets/images/location.svg"
+                   class=" mb-1 block"
+                   alt="location"
+                   />
+                   <div class="mr-2">
+
+                     <div class="darkest font-regular main-style">  {{"navbar.address" | translate}}</div>
+                     <div class="darkest font-medium main-style-15">الرياض</div>
+                   </div>
+          </div>
+        </div>
+        <div class="address-content w-11 md:w-4 mx-auto fixed z-3 px-4 py-5 "   #addressPanel  [ngClass]="{'hidden': !showAddressContent}">
+          <p class="font-semibold darkest main-style mb-3 mt-0">{{"navbar.address" | translate}}</p>
+          <p class="dark font-medium address-location mt-2 mb-5">{{"navbar.deliverTo" | translate}} <span class="dynamic-location font-bold darkest">{{userAdress}}</span> {{"navbar.toChangeLocation" | translate}}</p>
+          <button  class="p-button  primary-btn font-medium flex justify-content-center align-items-center stroke1" (click)="navigateAddress()" >{{ "navbar.changeAddress" | translate }} </button>
+        </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="end">
+
+      <div class="sm:pl-8 pl-3 flex align-items-center flex-wrap big-screen">
+         <app-nav-filter/>
+          <div class="flex align-items-center user-wrapper mr-3 sm:mr-4 cursor-pointer" (click)="switchLang()">
+            <img
+              src="assets/images/lang.svg"
+             
+              alt="language"
+            />
+            <div class="darkest  font-medium main-style-15 mr-1">{{"navbar.lang" | translate}}</div>
+          </div>
+      
+        <app-nav-cart />
+
+
+     
+      <div
+      class=" user-wrapper relative" 
+      (click)="toggleMenu()" #userProfile
+    >
+      <div class="flex gap-1 align-items-center justify-content-center cursor-pointer  px-3" [class]="showMenu ? 'activeNav': 'darkest'">
+        <img [src]=" !showMenu ?'./assets/images/nav-user.svg': './assets/images/nav-user-white.svg'" alt="user">
+        <div class=" font-medium main-style-15   ">{{"navbar.account management" | translate}}</div>
+      </div>
+      <div  [class]="showMenu? 'absolute activeGreenBorder': ''"></div>
+    </div>
+    <div *ngIf="showMenu && verified" class="menu">
+      <div class="user-wrapper-menu px-4 py-3">
+        <div class="flex">
+          <div
+          class="user-ico ml-3 flex justify-content-center align-items-center"
+        >
+          <img src="assets/images/shape-user.svg" alt="user" />
+        </div>
+          <div class="flex flex-column">
+            <div class="darkest name font-semibold mb-1">محمد الدوسري</div>
+            <div class=" font-medium dark main-style">mohamed.email.com</div>
+          </div>
+       
+        </div>
+      </div>
+      <ul class="px-4 py-3 font-regular main-style-15 darkest">
+        <li class="flex justify-content-start cursor-pointer list-item" [routerLink]="'/account-info'">
+          <div>
+            <img src="assets/images/menu-id.svg" alt="" />
+          </div>
+         <div class="pr-2">
+          {{"navbar.profile" | translate}}
+        </div>
+        </li>
+        <li class="my-3 cursor-pointer flex justify-content-start list-item"  [routerLink]="'/contracts'">
+          <div>
+            <img src="assets/images/menu-statics.svg" alt="paper" />
+          </div>
+          <div class="pr-2">
+            {{"navbar.contracts menu" | translate}}
+          </div>
+        </li>
+        <li class="my-3 cursor-pointer flex justify-content-start list-item"  [routerLink]="'/orders'">
+          <div>
+            <img src="assets/images/menu-sheet.svg" alt="paper" />
+          </div>
+          <div class="pr-2">
+            {{"navbar.oreders" | translate}}
+          </div>
+        </li>
+        <li class="my-3 cursor-pointer flex justify-content-start list-item" [routerLink]="'/address'">
+          <div class="menu-location">
+            <img src="assets/images/menu-location.png" alt="location" />
+          </div>
+          <div class="pr-2">
+            {{"navbar.address" | translate}}
+          </div>
+        </li>
+        <li class="mt-3 flex justify-content-start cursor-pointer list-item" [routerLink]="'/support/tickets-list'">
+          <div class="menu-message">
+            <img src="assets/images/menu-message.png" alt="message" />
+          </div>
+          <div class="pr-2">
+            {{"navbar.support and help" | translate}}
+          </div>
+        </li>
+      </ul>
+      <div class="sign-out redText font-medium px-4 py-3">
+        <div class="flex justify-content-start cursor-pointer list-item "  [routerLink]="'/account-info'"  >
+          <div>
+            <img src="assets/images/menu-signOut.svg" alt="signout" />
+          </div>
+          <div class="pr-2 font-regular main-style-15">{{"navbar.sign out" | translate}}</div>
+        </div>
+      </div>
+    </div>
+    
+  <div *ngIf="showMenu && !verified" class="complete-profile-content w-11 md:w-4 mx-auto fixed z-3 px-4 py-5"     [ngClass]="{'hidden': !showCompleteInfo}">
+    <p class="font-semibold darkest complete-profile-header mb-4 mt-0">{{"navbar.completeProfile" | translate}}</p>
+    <p class="dark font-medium main-style mt-1 mb-5">{{"navbar.toCompleteProfile" | translate}}</p>
+    <button  class="p-button  primary-btn font-medium flex justify-content-center align-items-center stroke1" [routerLink]="['/account-info']"  >{{ "navbar.profile" | translate }} </button>
+  </div>
+      </div>
+    </ng-template>
+  </p-menubar>
+</div>

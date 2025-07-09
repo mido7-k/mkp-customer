@@ -1,0 +1,107 @@
+<div class="order-detail-wrapper py-4 mb-3">
+  <div
+    class="readonly-wrapper p-3 mb-4 flex justify-content-between flex-wrap mx-4"
+  >
+    <div>
+      <p class="order-num darkest mt-0 mb-2">#B1Y5H8</p>
+      <div
+        class="flex flex-wrap gap-2 align-items-center dark font-regular main-style-15"
+      >
+        <div class="product-only">
+          {{ amount }} {{ "orders.product" | translate }}
+        </div>
+        <div class="dot"></div>
+        <div>
+          {{ "orders.requestIn" | translate }}
+        </div>
+        <div>
+          {{ date }}
+        </div>
+      </div>
+    </div>
+    <p class="mb-0">
+      @if(currentLanguage === 'ar'){
+      <span class="currency">SAR</span>
+      <span class="inline-block px-2 product-price darkest">185,000</span>
+      }@else {
+      <span class="inline-block px-2 product-price darkest">185,000</span>
+      <span class="currency">SAR</span>
+      }
+    </p>
+  </div>
+  <div class="flex px-4 mb-5">
+    <p class="my-0 font-regular dark main-style-15 ml-2">
+      {{ "orders.desiredDate" | translate }}
+    </p>
+    <p class="my-0 darkest expected-date">23 Jan, 2024</p>
+  </div>
+
+  <!-- <p-steps [dir]="currentLanguage==='ar'? 'rtl' : 'ltr'" [model]="items" [activeIndex]="activeIndex" /> -->
+  <div class="relative mx-6 mb-8 pb-6">
+
+    <p-progressBar [value]="stepValue" [style]="{ height: '8px' }" [showValue]="false"/>
+    <div class="absolute step-one text-nowrap flex flex-column align-items-center " [class]="activeIndex >= 0? 'active-step': ''"><i class="pi pi-check stroke1 mb-2"></i><div class="pb-2 mt-4"><img src="./assets/images/step-book.svg" alt="book"></div><p class="my-0 main-style darkest font-regular"> {{ "orders.step1" | translate }}</p> </div>
+    <div class="absolute step-two text-nowrap flex flex-column align-items-center" [class]="activeIndex > 0? 'active-step': ''"><div class="pb-2 mt-6"><img src="./assets/images/step-box.svg" alt="box"></div><p class="my-0 main-style darkest font-regular">{{ "orders.In Progress" | translate }}</p> </div>
+    <div class="absolute step-three text-nowrap flex flex-column align-items-center" [class]="activeIndex > 1? 'active-step': ''"> <div class="pb-2 mt-6"><img src="./assets/images/step-truck.svg" alt="truck"></div><p class="my-0 main-style darkest font-regular">{{ "orders.In shipping" | translate }}</p> </div>
+    <div class="absolute step-four text-nowrap flex flex-column align-items-center" [class]="activeIndex > 2? 'active-step': ''"><div class="pb-2 mt-6"><img src="./assets/images/step-shake.svg" alt="hands"></div><p class="my-0 main-style darkest font-regular"> {{ "orders.step4" | translate }}</p>  </div>
+
+  </div>
+  
+  <div class="stages-wrapper pt-5 px-4">
+    <p class="mb-3 mt-0 darkest font-medium stages-title">
+      {{ "orders.stages" | translate }}
+    </p>
+    <div [class]="activeIndex > 2 ? 'flex': 'hidden'"
+      class="single-stage  justify-content-start align-items-center gap-3 mb-3"
+    >
+      <img src="./assets/images/stage-check.svg" alt="check" />
+      <div>
+        <p
+          class="mt-0 mb-2 font-medium darkest main-style-15 single-stage-title"
+        >
+          {{ "orders.givenStage" | translate }}
+        </p>
+        <p class="my-0 dark main-style-15 stage-subtitle">{{ historyDate }}</p>
+      </div>
+    </div>
+        <div [class]="activeIndex > 1 ? 'flex': 'hidden'"
+      class="single-stage  justify-content-start align-items-center gap-3 mb-3"
+    >
+      <img src="./assets/images/stage-location.svg" alt="location" />
+      <div>
+        <p
+          class="mt-0 mb-2 font-medium darkest main-style-15 single-stage-title"
+        >
+          {{ "orders.shippingStage" | translate }}
+        </p>
+        <p class="my-0 dark main-style-15 stage-subtitle">{{ historyDate }}</p>
+      </div>
+    </div>
+        <div [class]="activeIndex > 0 ? 'flex': 'hidden'"
+      class="single-stage  justify-content-start align-items-center gap-3 mb-3"
+    >
+      <img src="./assets/images/stage-box.svg" alt="box" />
+      <div>
+        <p
+          class="mt-0 mb-2 font-medium darkest main-style-15 single-stage-title"
+        >
+          {{ "orders.prepareStage" | translate }}
+        </p>
+        <p class="my-0 dark main-style-15 stage-subtitle">{{ historyDate }}</p>
+      </div>
+    </div>
+        <div [class]="activeIndex >= 0 ? 'flex': 'hidden'"
+      class="single-stage  justify-content-start align-items-center gap-3 mb-3"
+    >
+      <img src="./assets/images/stage-note.svg" alt="check" />
+      <div>
+        <p
+          class="mt-0 mb-2 font-medium darkest main-style-15 single-stage-title"
+        >
+          {{ "orders.confiremdStage" | translate }}
+        </p>
+        <p class="my-0 dark main-style-15 stage-subtitle">{{ historyDate }}</p>
+      </div>
+    </div>
+  </div>
+</div>

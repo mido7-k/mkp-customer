@@ -1,0 +1,80 @@
+<section >
+    <div class="grid grid-nogutter  sm:px-8 px-3 mt-5">
+        <div class="md:col-8 flex justify-content-start align-items-center ">
+            <div class="darkest font-bold contract-number">{{"cart.cartContract"| translate}}</div>
+           @if(contractsList[0]){ <div class="mx-2 contract-value darkest font-light">{{contractsList[0].contractNumber.ar}}</div>}
+            <div><img src="./assets/images/arrow-down-black.svg" alt="arrow"></div>
+        </div>
+        <div class="sm:col-4 pr-4 " >
+            <div class="flex px-4  mx-auto py-1 readonly-price text-nowrap">
+                <div class="flex first-value">
+                    <p class="my-0 read-label main-style font-semibold darkest">{{"cart.contractValue"| translate}}</p>
+                    <p class="my-0 read-value dark">375,000 SAR</p>
+                </div>
+                <div class="flex second-value">
+                    <p class="my-0 read-label main-style font-semibold darkest">{{"cart.restValue"| translate}}</p>
+                    <p class="my-0 read-value dark">325,000 SAR</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-nogutter  sm:px-8 px-3 mt-4">
+        <div class="md:col-8">
+            <app-orders-list  (totalPriceChange)="updateTotalPrice($event)"/>
+        </div>
+        <div class="md:col-4 pr-4">
+            <div class="prices-wrapper">
+                <div class="prices-container py-3 px-4 mb-4">
+                    <p class="font-medium total-price mt-0 mb-3"  >{{ "cart.totalRequest" | translate }}</p>
+                    <div class="bordered-prices pb-3 mb-3">
+                        <div class="flex justify-content-between mb-3">
+                            <p class="my-0 dark font-regular main-tyle">{{ "cart.fundPrice" | translate }}</p>
+                            <p class="my-0 darkest fund-price flex gap-1">
+                                @if(currentLanguage === 'ar'){
+                                    <span class="currency-price">SAR</span>
+                                    <span>{{fundPrice}}</span> 
+                                    <span>-</span>
+                                }@else {
+                                <span>-</span>
+                                <span>{{fundPrice}}</span> 
+                                <span class="currency-price">SAR</span>
+                                }
+                            </p>
+                        </div>
+                        <div class="flex justify-content-between ">
+                            <p class="my-0 dark font-regular main-tyle">{{ "cart.totalPrice" | translate }}</p>
+                            <p class="my-0 darkest fund-price flex gap-1">
+                                @if(currentLanguage === 'ar'){
+                                    <span class="currency-price">SAR</span>
+                                <span >{{totalPrice}}</span> 
+                                }@else {
+                                <span>{{totalPrice}}</span> 
+                                <span class="currency-price">SAR</span>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-content-between align-items-center darkest font-bold ">
+                        <p class="rest-price my-0">{{ "cart.restPrice" | translate }}</p>
+                        <p class="my-0 darkest fund-price-rest flex gap-1 ">
+                            @if(currentLanguage === 'ar'){
+                                <span class="main-style-15">SAR</span>
+                            <span >{{restPrice}}</span> 
+                            }@else {
+                            <span>{{restPrice}}</span> 
+                            <span class="main-style-15">SAR</span>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <button  [routerLink]="'/check-out'"
+                class="p-button primary cart-btn flex justify-content-center align-items-center font-medium stroke1 w-12 py-1"
+              >
+                <span class="inline-block ml-2 font-bold ">{{ "cart.proceed" | translate }}</span>
+                <i class="pi pi-arrow-left"></i>
+              </button>
+            </div>
+        </div>
+    </div>
+</section>
+

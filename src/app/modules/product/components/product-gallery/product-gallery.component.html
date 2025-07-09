@@ -1,0 +1,18 @@
+<div class="mb-5 product-specs-carousel" dir="ltr">
+    <p-galleria 
+    [value]="images" 
+    [circular]="true"
+    [responsiveOptions]="responsiveOptions" 
+    [numVisible]="10">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" style="width: 100%;" alt="img" />
+            <p class="font-medium darkest relative  report-product cursor-pointer flex align-items-center"><span class="report-text text-nowrap inline-block mr-2"> {{ "product.report" | translate }} </span><img src="./assets/images/black-flag.svg" alt="flag"> </p>
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+            <div class="grid grid-nogutter justify-content-center">
+                <img [src]="item.thumbnailImageSrc" alt="img" />
+            </div>
+            <!-- <p class="darkest absolute img-label font-bold">{{item.title}}</p> -->
+        </ng-template>
+    </p-galleria>
+</div>

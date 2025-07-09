@@ -1,0 +1,51 @@
+
+<div class="header-popup-banner bg-success" [class]="status" ></div>
+<img [src]="imagePath" alt="Invoice Image" class="header-popup-image" />
+<p class="mt-3 mb-2 invoice-created font-semibold darkest">{{ "checkout.successBuy" | translate }}</p>
+<p class="mt-0 mb-3 helper-p font-regular dark">{{ "checkout.mailTo" | translate }} na.email.com</p>
+<div class="grid grid-nogutter mb-3">
+    <div class="col">
+        <div class=" flex-column align-items-center flex text-center">
+            <img src="./assets/images/popup-car.svg" alt="car">
+            <p class="popup-label darkest font-semibold">{{ "checkout.delivery" | translate }}</p>
+            <p class="my-0 helper-p font-regular dark">
+                    @if(paymentMethod === "company"){
+                        {{ "checkout.company" | translate }}
+                    }@else {
+                        {{ "checkout.site" | translate }}
+                    }
+                    
+               </p>
+        </div>
+    </div>
+    <div class="col">
+        <div class=" flex-column align-items-center flex text-center">
+        <img src="./assets/images/popup-card.svg" alt="car">
+        <p class="popup-label darkest font-semibold  my-0 py-3 middle-label w-12"> {{ "checkout.pay" | translate }}</p>
+        <p class="my-0 helper-p font-regular dark">
+        
+            @if(paymentMethod === "sdad"){
+                {{ "checkout.sdad" | translate }}
+            }@else {
+                {{ "checkout.bank" | translate }}
+            } 
+        </p>
+        </div>
+    </div>
+    <div class="col">
+        <div class=" flex-column align-items-center flex text-center">
+        <img src="./assets/images/popup-calendar.svg" alt="car">
+        <p class="popup-label darkest font-semibold">{{ "checkout.date" | translate }}</p>
+        <p class="my-0 helper-p font-regular dark  ">
+            @if(currentLanguage ==="en"){
+                {{ today | date:'fullDate' }}
+            }
+            @if(currentLanguage ==="ar"){
+                {{formattedDate}}
+            }
+        </p>
+        </div>
+    </div>
+</div>
+<button class="p-button flex justify-content-center align-items-center stroke1 font-medium w-12 mb-2" (click)="closeDialog()" [routerLink]="['/orders']" >{{ "checkout.request" | translate }}</button>
+<button class="p-button close-btn flex justify-content-center align-items-center darkest font-medium w-12" (click)="closeDialog()">{{ "checkout.close" | translate }}</button>

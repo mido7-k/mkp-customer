@@ -1,0 +1,38 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<section class="bestSeller-section sm:px-8 px-3 pt-6 pb-5">
+    <div class="flex justify-content-between align-items-center  mb-4 ">
+        <div>
+            <div class="flex align-items-center justify-content-start"> <div class="title-dash ml-3"></div> <span class="carousel-title darkest font-bold ">{{"home.bestSeller" | translate}}</span></div>
+            <p class="mb-0 mt-3 px-3 stroke1 font-regular main-style carousel-desc main-style">{{"home.discoverTrusted" | translate}}</p>
+        </div>
+        <div class="flex align-items-center main-style font-semibold main-style cursor-pointer yellowText"  (click)="navigateShopping()"><div class="ml-3">{{ "accountInfo.allRequests" | translate }}</div><img src="./assets/images/arrowLeft.svg" alt="arrow"></div>
+    </div> 
+        <div class="products-wrapper justify-content-center flex flex-wrap gap-4">
+           @for (product of products; track product.id) {
+
+            <div class="single-product-card py-4 px-5 relative cursor-pointer" (click)="navigateShopping()">    
+                 @if(product.stockNumber <= 3 && product.stockNumber >= 1 ) {  <div class="absolute availability-wrapper main-style stroke1 font-medium p-1"> {{"home.lowStock" | translate}}</div>}
+                 @if(product.stockNumber === 0) {  <div class="absolute availability-wrapper-empty main-style stroke1 font-medium p-1"> {{"home.unavailable" | translate}}</div>} 
+                 @if(product.contract){ <div class="absolute contract-img"> <img src="./assets/images/contract.svg" alt="badge"></div>}
+                 <div class="absolute flex align-items-center rating-wrapper"> 
+                      @if(product.rating >= 4){  <img src="./assets/images/green-star.svg" alt="star">}
+                      @if(product.rating <= 2){  <img src="./assets/images/red-star.svg" alt="star">}
+                      @if(product.rating > 2 && product.rating < 4){  <img src="./assets/images/yellow-star.svg" alt="star">}
+                        <p class="my-0 mr-1 dark">{{ product.rating }}</p>
+                </div>
+                <div class="flex justify-content-center mt-2 carousel-product-img"> <img [src]="product.imageUrl" alt="product"></div>
+                <p class="yellowText mt-1 mb-0 carousel-product-title font-bold"> {{ currentLanguage === 'ar' ? product.productNameAr : product.productNameEn }}</p>
+                <p class="dark my-2 ">
+                    <span class="inline-block ml-1 font-regular carousel-product-info main-style-15   ">{{"home.productCompany" | translate}}</span>
+                     <span class="carousel-company-name font-bold">{{ currentLanguage === 'ar' ? product.vendorNameAr : product.vendorNameEn }}</span>
+                </p>
+                <div class="carousel-product-price darkest my-0 ">
+                    <div class=" inline-block ml-2 font-serif main-style"> SAR </div>
+                    <div class="inline-block">{{product.price}}</div> 
+                 </div>
+            </div>
+        }
+        </div> 
+</section>
+

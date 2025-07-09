@@ -1,0 +1,49 @@
+<div class="prepared-requests px-2">
+    <div class="flex">
+
+        <div class=" ml-3 ">
+        <img src="./assets/images/ticket.svg" alt="ticket">
+        </div>
+        <div>
+            <div class="darkest numbers">0</div>
+            <div class="mt-2 font-regular main-style-15 dark">{{ "accountInfo.ordersPrepared" | translate }}</div>
+        </div>
+    </div>
+</div>
+<div class="completed-requests px-2  mt-4">
+    <div class="flex">
+        <div class=" ml-3">
+        <img src="./assets/images/box.svg" alt="box">
+        </div>
+        <div>
+            <div class="darkest numbers">0</div>
+            <div class="mt-2 main-style-15 font-regular dark">{{ "accountInfo.ordersCompleted" | translate }}</div>
+        </div>
+    </div>
+</div>
+<div class="wallet-balance px-2  mt-4">
+    <div class="flex">
+
+        <div class=" ml-3">
+        <img src="./assets/images/wallet.svg" alt="wallet">
+        </div>
+        <div>
+            <div class="flex align-items-center">
+                <span class="currency">SAR</span>
+                <div class="darkest numbers mx-1" >0</div>
+                <img src="./assets/images/warning-i.svg" alt="" [pTooltip]="tooltipContent" tooltipPosition="top">
+                <ng-template #tooltipContent>
+    <div class="flex align-items-start justify-cotent-start gap-2">
+
+<img src="./assets/images/dark-question.svg" alt="icon">
+<div class="flex flex-column">
+    <p class="font-semibold main-style mt-0 mb-2 ">{{ "accountInfo.transaction" | translate }}</p>
+    <p class="my-0 font-regular main-style">{{ "accountInfo.subTransaction" | translate }}</p>
+</div>
+    </div>
+</ng-template>
+            </div>
+            <div class="mt-2 main-style-15 font-regular dark">{{ "accountInfo.wallet" | translate }}</div>
+        </div>
+    </div>
+</div>

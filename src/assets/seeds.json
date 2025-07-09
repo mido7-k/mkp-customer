@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "stockNumber": 8,
+      "rating": 4.9,
+      "imageUrl": "./assets/images/seeds/1.svg",
+      "vendorNameAr": "الناصر الزراعية",
+      "vendorNameEn": "Al Nasser Agriculture",
+      "productNameAr": "بذور القمح",
+      "productNameEn": "Wheat Seeds",
+      "price": 75
+    },
+    {
+      "id": 2,
+      "stockNumber": 8,
+      "rating": 4.3,
+      "imageUrl": "./assets/images/seeds/2.svg",
+      "vendorNameAr": "المزرعة",
+      "vendorNameEn": "Farm Company",
+      "productNameAr": "شتلات الطماطم",
+      "productNameEn": "Tomato Seedlings",
+      "price": 65
+    },
+    {
+      "id": 3,
+      "stockNumber":8,
+      "rating": 3.8,
+      "imageUrl": "./assets/images/seeds/3.svg",
+      "vendorNameAr": "الناصر الزراعية",
+      "vendorNameEn": "Al Nasser Agriculture",
+      "productNameAr": "بذور الخيار",
+      "productNameEn": "Cucumber Seeds",
+      "price": 25
+    },
+    {
+      "id": 4,
+      "stockNumber": 8,
+      "rating": 3.5,
+      "imageUrl": "./assets/images/seeds/4.svg",
+      "vendorNameAr": "معدات المزارع",
+      "vendorNameEn": "Farm Equipment Co.",
+      "productNameAr": "بذور الذرة",
+      "productNameEn": "Corn Seeds",
+      "price": 85
+    },
+    {
+      "id": 5,
+      "stockNumber": 5,
+      "rating": 4.2,
+      "imageUrl": "./assets/images/seeds/5.svg",
+      "vendorNameAr": "الري",
+      "vendorNameEn": "Irrigation Co.",
+      "productNameAr": "محراث دوار",
+      "productNameEn": "Rotary Plow",
+      "price": 100
+    },
+    {
+      "id": 6,
+      "stockNumber": 6,
+      "rating": 1.9,
+      "imageUrl": "./assets/images/seeds/6.svg",
+      "vendorNameAr": "الناصر الزراعية",
+      "vendorNameEn": "Al Nasser Agriculture",
+      "productNameAr": "بذور القمح",
+      "productNameEn": "Wheat Seeds",
+      "price": 80
+    },
+    {
+      "id": 7,
+      "stockNumber": 9,
+      "rating": 4.7,
+      "imageUrl": "./assets/images/seeds/7.svg",
+      "vendorNameAr": "المعدات",
+      "vendorNameEn": "Equipment Co.",
+      "productNameAr": "شتلات الطماطم",
+      "productNameEn": "Tomato Seedlings",
+      "price": 50
+    },
+    {
+      "id": 8,
+      "stockNumber": 4,
+      "rating": 4.0,
+      "imageUrl": "./assets/images/seeds/8.svg",
+      "vendorNameAr": "المزرعة",
+      "vendorNameEn": "Farm Company",
+      "productNameAr": "بذور الخيار",
+      "productNameEn": "Cucumber Seeds",
+      "price": 75
+    },
+    {
+      "id": 9,
+      "stockNumber": 7,
+      "rating": 3.5,
+      "imageUrl": "./assets/images/seeds/9.svg",
+      "vendorNameAr": "معدات المزارع",
+      "vendorNameEn": "Farm Equipment Co.",
+      "productNameAr": "بذور الذرة",
+      "productNameEn": "Corn Seeds",
+      "price": 90
+    },
+    {
+      "id": 10,
+      "stockNumber": 10,
+      "rating": 1.2,
+      "imageUrl": "./assets/images/seeds/10.svg",
+      "vendorNameAr": "الري",
+      "vendorNameEn": "Irrigation Co.",
+      "productNameAr": "محراث دوار",
+      "productNameEn": "Rotary Plow",
+      "price": 10
+    }
+  ]
+  

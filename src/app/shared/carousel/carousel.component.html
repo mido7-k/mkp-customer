@@ -1,0 +1,114 @@
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<div class="sm:px-8 px-3 carousel-section  pt-6 pb-5">
+  <div class="flex justify-content-between align-items-center mb-4">
+    <div>
+      <div class="flex align-items-center justify-content-start">
+        <div class="title-dash ml-3"></div>
+        <span class="carousel-title darkest font-bold">{{ title | translate }}</span>
+      </div>
+        @if(subTitle){ <p class="mb-0 w-max mt-3 px-3 stroke1 font-regular carousel-desc main-style">
+        {{ subTitle | translate }}
+        </p>
+        }
+    </div>
+   @if(showAll){
+     <div
+       class="flex align-items-center show-results font-bold cursor-pointer yellowText"
+     >
+       <div class="ml-3">{{ "accountInfo.allRequests" | translate }}</div>
+       <img src="./assets/images/arrowLeft.svg" alt="arrow" />
+     </div>
+   }
+  </div>
+  <p-carousel
+    dir="ltr"
+    [value]=" products"
+    [numVisible]="5"
+    circular="true"
+    [numScroll]="1"
+    [responsiveOptions]="responsiveOptions"
+  >
+ @if(circular){
+       <ng-template let-supplier pTemplate="item">
+      <div class=" text-right py-3">
+        <div class=" py-4 px-5 flex flex-column justify-content-center align-items-center">
+          <div class="flex justify-content-center align-items-center mt-2 border-circle circular-carousel-product-img">
+            <img [src]="supplier.imageUrl" alt="product" />
+          </div>
+          <p class="darkest mt-4 mb-0 main-style-15 font-semibold">
+            {{
+              currentLanguage === "ar"
+                ? supplier.supplierNameAr
+                : supplier.supplierNameEn
+            }}
+          </p>
+     
+        </div>
+      </div>
+    </ng-template>
+    }@else{
+        <ng-template let-product pTemplate="item">
+            <div class="products-wrapper flex flex-wrap gap-5 text-right py-3 cursor-pointer" (click)="navigatehopping()">
+              <div class="single-product-card py-4 px-5 relative">
+                @if(product.stockNumber <= 3 && product.stockNumber >= 1 ) {
+                <div class="absolute availability-wrapper main-style stroke1 font-medium p-1">
+                  {{ "home.lowStock" | translate }}
+                </div>
+                } @if(product.stockNumber === 0) {
+                <div
+                  class="absolute availability-wrapper-empty main-style stroke1 font-medium p-1"
+                >
+                  {{ "home.unavailable" | translate }}
+                </div>
+                } @if(product.contract){
+                <div class="absolute contract-img">
+                  <img src="./assets/images/contract.svg" alt="badge" />
+                </div>
+                }
+                <div class="absolute flex align-items-center rating-wrapper flex gap-1"  [dir]="currentLanguage==='ar' ? 'rtl' : 'ltr'">
+                  @if(product.rating >= 4){
+                  <img src="./assets/images/green-star.svg" alt="star" />}
+                  @if(product.rating <= 2){
+                  <img src="./assets/images/red-star.svg" alt="star" />}
+                  @if(product.rating > 2 && product.rating < 4){
+                  <img src="./assets/images/yellow-star.svg" alt="star" />}
+                  <p class="my-0 dark">{{ product.rating }}</p>
+                </div>
+      
+                <div class="flex justify-content-center mt-2 carousel-product-img">
+                  <img [src]="product.imageUrl" alt="product" />
+                </div>
+                <p class="yellowText mt-1 mb-0 carousel-product-title font-bold">
+                  {{
+                    currentLanguage === "ar"
+                      ? product.productNameAr
+                      : product.productNameEn
+                  }}
+                </p>
+                <p class="dark my-2  single-card-desc-wrapper flex align-items-center">
+                  <span class="carousel-company-name font-bold main-style">{{
+                    currentLanguage === "ar"
+                      ? product.vendorNameAr
+                      : product.vendorNameEn
+                  }}</span>
+                  <span class="inline-block ml-1 font-medium carousel-product-info text-nowrap main-style ">{{
+                    "home.productCompany" | translate
+                  }}</span>
+               
+                </p>
+                 <div class="carousel-product-price flex align-items-center gap-1 darkest my-0 " [dir]="currentLanguage=== 'ar'? 'rtl':'ltr'">
+                   @if(currentLanguage === 'ar'){
+                     <div class=" inline-block font-serif main-style "> SAR </div>
+                     <div class="inline-block font-medium">{{product.price}}</div> 
+                    }@else {
+                      <div class="inline-block font-medium">{{product.price}}</div> 
+                      <div class=" inline-block font-serif main-style "> SAR </div>
+                    }
+                 </div>
+              </div>
+            </div>
+          </ng-template>
+    }
+  </p-carousel>
+</div>

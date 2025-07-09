@@ -1,0 +1,129 @@
+<section class="sm:px-8 px-3 pt-4 pb-5">
+    <div class="flex align-items-center justify-content-start">
+      <div class="title-dash ml-3"></div>
+      <span class="carousel-title darkest font-bold">{{ "checkout.complete" | translate }}</span>
+    </div>
+    <div class="grid grid-nogutter">
+        <div class="md:col-8">
+            <app-delivery-method  (deliveryMethodChange)="onDeliveryMethodChange($event)"/>
+            <app-view-address />
+            <app-wallet (walletChange)="onWalletChange($event)" />
+            <app-payment-method (validCard)="onValidCard($event)" (paymentMethodChange)="onPaymentMethodChange($event)"  (sdadPaidChange)="onsdadPaidChange($event)"/>
+        </div>
+        <div class="md:col-4 pr-4">
+            <div class="prices-wrapper mt-4">
+                <div class="prices-container py-3 px-4 mb-4">
+                    <p class="font-medium total-price mt-0 mb-3"  >{{ "checkout.summaryRequest" | translate }}</p>
+                    <div class="flex align-items-center gap-4 product-item">
+                        <div class="product-wrapper">
+                            <img src="./assets/images/products/tracktor.svg" alt="product">
+                        </div>
+                        <div>
+                            <p class="my-0 product-name main-style">
+                                @if(currentLanguage === 'ar'){
+                                تراكتور
+                                }@else{
+                                    Tracktor
+                                }
+                            </p>
+                            <p class="mb-0"> <span class="amount">1x</span><span class="inline-block px-2 product-price">185,000</span><span class="currency">SAR</span></p>
+                        </div>
+                    </div>
+                    <div class="flex align-items-center gap-4 product-item">
+                        <div class="product-wrapper">
+                            <img src="./assets/images/products/agriculture-equipment.svg" alt="product">
+                        </div>
+                        <div>
+                            <p class="my-0 product-name  main-style">
+                                @if(currentLanguage === 'ar'){
+                                غرف تبريد ماه
+                                }@else{
+                                    Cooling Rooms
+                                }
+                            </p>
+                            <p class="mb-0"> <span class="amount">1x</span><span class="inline-block px-2 product-price">60,000</span><span class="currency">SAR</span></p>
+                        </div>
+                    </div>
+                    <div class="flex align-items-center gap-4 product-item-last">
+                        <div class="product-wrapper">
+                            <img src="./assets/images/products/harvester.svg" alt="product">
+                        </div>
+                        <div>
+                            <p class="my-0 product-name main-style">
+                                @if(currentLanguage === 'ar'){
+                                حصادات
+                                }@else{
+                                    Harvesters
+                                }
+                            </p>
+                            <p class="mb-0"> <span class="amount">1x</span><span class="inline-block px-2 product-price">60,000</span><span class="currency">SAR</span></p>
+                        </div>
+                    </div>
+                    <div class="bordered-prices pb-3 mb-3">
+                        <div class="flex justify-content-between mb-3">
+                            <p class="my-0 medium font-regular main-style-15">{{ "cart.fundPrice" | translate }}</p>
+                            <p class="my-0 darkest fund-price flex gap-1">
+                                @if(currentLanguage === 'ar'){
+                                    <span class="currency-price">SAR</span>
+                                    <span>{{fundPrice}}</span> 
+                                    <span>-</span>
+                                }@else {
+                                <span>-</span>
+                                <span>{{fundPrice}}</span> 
+                                <span class="currency-price">SAR</span>
+                                }
+                            </p>
+                        </div>
+                      @if(useWallet){
+                          <div class="flex justify-content-between mb-3">
+                              <p class="my-0 medium font-regular main-style-15">{{ "checkout.walletBalance" | translate }}</p>
+                              <p class="my-0 darkest fund-price flex gap-1">
+                                  @if(currentLanguage === 'ar'){
+                                      <span class="currency-price">SAR</span>
+                                      <span>{{walletBalance}}</span> 
+                                      <span>-</span>
+                                  }@else {
+                                  <span>-</span>
+                                  <span>{{walletBalance}}</span> 
+                                  <span class="currency-price">SAR</span>
+                                  }
+                              </p>
+                          </div>
+                      }
+                        
+                        <div class="flex justify-content-between ">
+                            <p class="my-0 medium font-regular main-style-15">{{ "cart.totalPrice" | translate }}</p>
+                            <p class="my-0 darkest fund-price flex gap-1">
+                                @if(currentLanguage === 'ar'){
+                                    <span class="currency-price">SAR</span>
+                                <span >{{totalPrice}}</span> 
+                                }@else {
+                                <span>{{totalPrice}}</span> 
+                                <span class="currency-price">SAR</span>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-content-between align-items-center darkest font-bold ">
+                        <p class="rest-price my-0">{{ "cart.restPrice" | translate }}</p>
+                        <p class="my-0 darkest fund-price-rest flex gap-1 ">
+                            @if(currentLanguage === 'ar'){
+                                <span class="currency-price-rest">SAR</span>
+                            <span >{{restPrice}}</span> 
+                            }@else {
+                            <span>{{restPrice}}</span> 
+                            <span class="currency-price-rest">SAR</span>
+                            }
+                        </p>
+                    </div>
+                </div>
+                <button [disabled]="(!validCard || selectedPaymentMethod !=='bank') && (!sdadPayed || selectedPaymentMethod !=='sdad')  && (!sdadPayed || selectedPaymentMethod !=='mada') || !selectedDeliveryMethod"
+                 (click)="showSuccessPaymentDialog()"  class="p-button primary cart-btn flex justify-content-center align-items-center font-medium stroke1 w-12 py-1" 
+              >
+                <span class="inline-block ml-2 font-bold ">{{ "cart.proceed" | translate }}</span>
+                <i class="pi pi-arrow-left"></i>
+              </button>
+            </div>
+        </div>
+    </div>
+</section>

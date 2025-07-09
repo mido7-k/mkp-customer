@@ -1,0 +1,113 @@
+<div class="cart-card p-4 my-4 payment-method">
+    <p class="mb-3 mt-0 darkest font-bold payment-title">{{"checkout.choosePayment"| translate}}</p>
+    <div class="flex flex-wrap gap-4" [class]="paymentMethod !=='' ? 'mb-3' : ''">
+         <div class="payment-wrapper flex flex-column align-items-center  px-3 py-2">
+             <img src="./assets/images/sdad-card.svg" alt="card">
+             <p class="main-style darkest font-semibold my-2">{{"checkout.sdad"| translate}}</p>
+             <p-radioButton inputId="rb1"  [(ngModel)]="paymentMethod" name="paymentMethod" value="sdad"  (ngModelChange)="onPaymentMethodChange()" />
+         </div>
+         <div class="payment-wrapper flex flex-column align-items-center  px-3 py-2">
+             <img src="./assets/images/visa-cards.svg" alt="cards">
+             <p class="main-style darkest font-semibold my-2">{{"checkout.bank"| translate}}</p>
+             <p-radioButton inputId="rb2"  [(ngModel)]="paymentMethod" name="paymentMethod" value="bank"  (ngModelChange)="onPaymentMethodChange()"/>
+         </div>
+          <div class="payment-wrapper flex flex-column align-items-center  px-3 py-2">
+             <img src="./assets/images/mada-card.svg" alt="cards">
+             <p class="main-style darkest font-semibold my-2">{{"checkout.mada"| translate}}</p>
+             <p-radioButton inputId="rb3"  [(ngModel)]="paymentMethod" name="paymentMethod" value="mada"  (ngModelChange)="onPaymentMethodChange()"/>
+         </div>
+    </div>
+  @if(paymentMethod ==="bank") { 
+    <div  class="grid grid-nogutter flex-wrap:flex-nowrap gap-4">
+        <div  class="lg:col md:col-6">
+        <label for="fullname" class="block darkest main-style font-semibold mb-1">{{ "checkout.fullName" | translate }}</label>
+            <p-iconField iconPosition="right">
+                <p-inputIcon >
+                    <img src="./assets/images/user.svg" alt="user">
+                </p-inputIcon>
+                <input
+                  type="text"
+                  class="w-100"
+                  pInputText
+                  [placeholder]="'checkout.fullNamePlace' |translate"
+                  [(ngModel)]="fullName"
+                  (ngModelChange)="onInputChange()"
+                />
+              </p-iconField>
+        </div>
+        <div class="lg:col md:col-6">
+        <label for="card" class="block darkest main-style font-semibold mb-1">{{ "checkout.cardNumber" | translate }}</label>
+            <p-iconField iconPosition="right">
+              <p-inputIcon >
+                  <img src="./assets/images/card.svg" alt="user">
+              </p-inputIcon>
+              <input
+                type="text"
+                class="w-100"
+                pInputText
+                [placeholder]="'checkout.cardNumberPlace' |translate"
+                [(ngModel)]="cardNumber"
+                (ngModelChange)="onInputChange()"
+              />
+            </p-iconField>
+        </div>
+        <div class="lg:col md:col-6">
+        <label for="expiry" class="block darkest main-style font-semibold mb-1">{{ "checkout.expiry" | translate }}</label>
+        <p-iconField iconPosition="right">
+          <p-inputIcon>
+            <img src="./assets/images/calendar.svg" alt="calendar" />
+          </p-inputIcon>
+          <p-calendar
+            [(ngModel)]="expiryDate"
+            [showIcon]="false"
+            view="month"
+            dateFormat="mm/yy"
+            [readonlyInput]="true" 
+            [placeholder]="'checkout.expiryPlace' |translate"
+            inputId="templatedisplay"
+            (onClick)="openCalendar($event)"
+            (ngModelChange)="onInputChange()"
+            >
+          </p-calendar>
+        </p-iconField>
+        
+            </div>
+
+            <div  class="lg:col md:col-6">
+        <label for="lock" class="block darkest main-style font-semibold mb-1">{{ "checkout.cvv" | translate }}</label>
+                <p-iconField  iconPosition="right">
+                  <p-inputIcon >
+                      <img src="./assets/images/lock.svg" alt="user">
+                  </p-inputIcon>
+                  <input
+                    type="text"
+                    class="w-100"
+                    pInputText
+                    [placeholder]="'checkout.cvvPlace' |translate"
+                    [(ngModel)]="cvv"
+                    (ngModelChange)="onInputChange()"
+                  />
+                </p-iconField>
+            </div>
+    </div>
+}
+@if((paymentMethod ==="sdad" || paymentMethod ==="mada") && !sdadSuspend) { 
+  <button  [routerLink]="'/check-out'" (click)="showInvoiceDialog() " 
+  class="p-button invoice-btn main-style flex justify-content-center align-items-center font-regular dark py-1"
+>
+<img src="./assets/images/sparkels.svg" alt="invoice">
+  <span class="inline-block mr-2 font-bold ">{{ "checkout.createInvoice" | translate }}</span>
+</button>
+}
+
+@if((paymentMethod ==="sdad" || paymentMethod ==="mada") && sdadSuspend) { 
+  <div class="flex flex-wrap gap-2 caution px-2 py-1 font-medium darkest">
+    <img src="./assets/images/shield-exclamation.svg" alt="shield">
+    <span>{{ "checkout.suspend1" | translate }}</span>
+    <span class="invoice"> SAD-2024-11-14-1234</span>
+    <span>{{ "checkout.suspend2" | translate }}</span>
+  </div>
+}
+
+ </div>
+ 

@@ -1,0 +1,25 @@
+<section class="sm:px-8 px-3 pt-4 pb-5 contracts">
+            <div class="flex align-items-center justify-content-start"> <div class="title-dash ml-3"></div> <span class="carousel-title darkest font-bold ">{{"contracts.contractsList" | translate}}</span></div>
+            <p class="mb-0 dark font-regular main-style-15">{{"contracts.contractsDesc" | translate}}</p>
+            <div>
+                <div class="grid  mt-4 mb-3">
+                    <div class="flex lg:col-6">
+                        <div class=" darkest  contract-tab  cursor-pointer  ml-4 flex justfy-content-center" [class]="!companyActive? 'font-semibold tab-active' : 'font-regular'" (click)="companyActive = false">{{"contracts.personContract" | translate}}</div>
+                        <div class=" contract-tab darkest  cursor-pointer"  [class]="companyActive? 'font-semibold tab-active' : 'font-regular'"   (click)="companyActive = true">{{"contracts.companyContract" | translate}}</div>
+                    </div>
+                    <div class="filter-btns flex lg:col-6">
+                        <span class="p-input-icon-right ml-auto flex-grow-1">
+                            <i class="pi pi-search"></i>
+                            <input pInputText type="text" [(ngModel)]="searchValue"  placeholder="{{'contracts.search'| translate}}  {{contractsNumber}} {{'contracts.contract'| translate}}" />
+                        </span>
+                        <div class="filter-container main-style cursor-pointer flex align-items-center mx-4 px-3 py-0 darkest font-medium">{{'contracts.status'| translate}}</div>
+                        <div  class="filter-container main-style cursor-pointer flex align-items-center px-3 py-0 darkest font-medium">{{'contracts.date'| translate}}</div>
+                    </div>
+                </div>
+               @if(companyActive){
+                   <app-table [dataList]="contractsList" [actionButtons]="actionButtons" />
+               }@else {
+                <app-table [dataList]="contractsList" [actionButtons]="actionButtons" />
+               }
+            </div>
+</section>

@@ -1,0 +1,60 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+
+<div class="sm:px-8 px-3 purposes mb-5">
+    <div class="flex flex-wrap justify-content-between align-items-center mb-4">
+        <div class=" flex  darkest font-bold ">{{'contracts.purposesList'| translate}}</div>
+         <span class="p-input-icon-right  w-12 sm:w-6 lg:w-3">
+            <i class="pi pi-search"></i>
+            <input pInputText type="text" [(ngModel)]="searchValue"  placeholder="{{'contracts.search'| translate}}  {{purposesNumber}} {{'contracts.purposes'| translate}}" />
+        </span>
+    </div>
+    <p-carousel
+    dir="ltr"
+    [value]=" contracts"
+    [numVisible]="5"
+    circular="true"
+    [numScroll]="1"
+    [responsiveOptions]="responsiveOptions"
+  >
+  <ng-template let-contract pTemplate="item">
+    <div class="contract-wrapper px-2 cursor-pointer">
+        <div class=" flex flex-column p-3 align-items-center" [class.contract-card]="activeContractId !== contract.contractNumber"
+        [class.cotract-card-active]="activeContractId === contract.contractNumber" (click)="toggleActiveContract(contract.contractNumber)">
+         <p class="mt-0 cont-number " [ngClass]="{
+            'dark': activeContractId !== contract.contractNumber,
+            'stroke1': activeContractId === contract.contractNumber
+          }">{{ contract.contractNumber}}</p> 
+          <div class=" px-5 py-1" [class]="activeContractId === contract.contractNumber? 'fund-wrapper-active' : 'fund-wrapper'">
+           <div class="fund-title font-medium dark text-center">{{'contracts.fund'| translate}}</div>
+             <p class="fund-value primary my-1 pt-1">{{ contract.fund}} <span class="currency">SAR</span></p> 
+          </div>
+            <p class="product-name font-bold mb-0 my-2" [ngClass]="{
+                'darkest': activeContractId !== contract.contractNumber,
+                'stroke1': activeContractId === contract.contractNumber
+              }">
+                {{ currentLanguage === "ar"
+                    ? contract.productNameAr
+                    : contract.productNameEn}}
+            </p>
+            <div class=" font-medium my-0" [ngClass]="{
+                'medium': activeContractId !== contract.contractNumber,
+                'stroke1': activeContractId === contract.contractNumber
+              }">
+                <p class="purpose-title mt-0 mb-2">{{'contracts.purposeOffer'| translate}}</p>
+               <p class="text-center  mt-0 purpose-value"> {{ contract.purposePrice}} <span class="purpose-currency">SAR</span></p>
+            </div>
+            <div class="font-medium purpose-status px-2 py-1 " [class]="contract.statusEn ==='Not Available'? 'status-unavailable': contract.statusEn ==='Available for Purchase'? 'status-available' : 'status-purchaced' ">
+                {{ currentLanguage === "ar"
+                    ? contract.statusAr
+                    : contract.statusEn}}
+            </div>
+        </div>
+    </div>
+  </ng-template>
+    </p-carousel>
+
+    @if(activeContractId){
+<app-product-card />
+    }
+</div>

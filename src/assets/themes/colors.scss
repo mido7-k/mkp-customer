@@ -1,0 +1,151 @@
+:root {
+  --color-primary: #1B8354;
+  --color-darkest: #0D121C;
+  --color-dark: #384250;
+  --color-medium: #6C737F;
+  --color-weakStroke: #9DA4AE;
+  --color-light: #D2D6DB;
+  --color-lighter: #E5E7EB;
+  --color-lightest: #F9FAFB;
+  --color-white: #fff;
+  --color-redDark: #912018;
+  --color-redText: #D92D20;
+  --color-redStroke: #F97066;
+  --color-redStrokeWeak: #FECDCA;
+  --color-redFill: #FEF3F2;
+  --color-yellowText: #B87B02;
+  --color-yellowStrokeStrong: #F5BD02;
+  --color-yellowStrokeWeak: #FAE996;
+  --color-yellowFill: #FFFCE6;
+  --color-greenText: #067647;
+  --color-greenStrokeStrong: #17B26A;
+  --color-greenStrokeWeak: #ABEFC6;
+  --color-greenFill: #ECFDF3;
+  --color-warningText: #B54708;
+  --color-warningStrokeStrong: #FEC84B;
+  --color-warningStrokeWeak: #FEF0C7;
+  --color-warningFill: #FFFAEB;
+  --color-stroke1: #fff;
+  --color-backgroundGrey: #F3F4F6;
+  --color-purple: #9395fe;
+  --color-primaryLight: #DFF6E7;
+  --shadow-raised: 0px 2px 4px -2px #1018280F, 0px 4px 8px -2px #1018281A;
+  --font-serif: sans-serif
+}
+
+.primary {
+  color: var(--color-primary);
+}
+.darkest {
+  color: var(--color-darkest);
+}
+.dark {
+  color: var(--color-dark);
+}
+.medium {
+  color: var(--color-medium);
+}
+
+.weakStroke{
+  color: var(--color-weakStroke);
+}
+
+.light {
+  color: var(--color-light);
+}
+.lighter {
+  color: var(--color-lighter);
+}
+.lightest {
+  color: var(--color-lightest);
+}
+.white {
+  color: var(--color-white);
+}
+.purple {
+  color: var(--color-purple);
+}
+.redText {
+  color: var(--color-redText);
+}
+
+.redDark {
+  color: var(--color-redDark);
+}
+
+.redStroke {
+  color: var(--color-redStroke);
+}
+.redStrokeWeak {
+  color: var(--color-redStrokeWeak);
+}
+.redFill {
+  color: var(--color-redFill);
+}
+.yellowText {
+  color: var(--color-yellowText);
+}
+.yellowBackground {
+    background-color: var(--color-yellowText);
+  }
+
+  .yellowBorder {
+    border-color: var(--color-yellowText);
+  }
+
+.yellowStrokeStrong {
+  color: var(--color-yellowStrokeStrong);
+}
+.yellowStrokeWeak {
+  color: var(--color-yellowStrokeWeak);
+}
+.yellowFill {
+  color: var(--color-yellowFill);
+}
+.greenText {
+  color: var(--color-greenText);
+}
+.greenStrokeStrong {
+  color: var(--color-greenStrokeStrong);
+}
+.greenStrokeWeak {
+  color: var(--color-greenStrokeWeak);
+}
+.greenFill {
+  color: var(--color-greenFill);
+}
+.warningText {
+  color: var(--color-warningText);
+}
+.warningStrokeStrong {
+  color: var(--color-warningStrokeStrong);
+}
+.warningStrokeWeak {
+  color: var(--color-warningStrokeWeak);
+}
+
+.warningStrokeWeakBackground {
+  background-color: var(--color-warningStrokeWeak);
+}
+
+.warningFill {
+  background-color: var(--color-warningFill);
+}
+.stroke1 {
+  color: var(--color-stroke1);
+}
+.backgroundGrey {
+  color: var(--color-backgroundGrey);
+}
+
+.primaryLight{
+  color: var(--color-primaryLight);
+}
+
+.shadow-raised{
+  box-shadow: var(--shadow-raised);
+}
+
+.font-serif{
+  font-family: var(--font-serif);
+}

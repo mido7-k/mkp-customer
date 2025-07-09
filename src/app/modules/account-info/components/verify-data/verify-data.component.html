@@ -1,0 +1,28 @@
+    <div class="header-popup-banner" [class]="status" ></div>
+<img [src]="imagePath" alt="Invoice Image" class="header-popup-image" />
+    <div>
+        <div class="mt-4">
+            <p class="mb-1 darkest popup-header font-semibold "> {{ "accountInfo.fillFollowingData" | translate }} </p>
+            <p class="mt-0 dark main-style font-regular"> {{ "accountInfo.pleaseFillmobileMail" | translate }} </p>
+        </div>
+        <div>
+            <div class="mb-3" id="otp -input">
+                <label for="mobile" class="block darkest mb-2">رقم الجوال</label>
+                <p-inputGroup>
+                    <input type="number" pInputText placeholder="  5X-XXXXXXX"  [(ngModel)]="mobile" />
+                    <p-inputGroupAddon>(966)</p-inputGroupAddon>
+                    <p-inputGroupAddon><img src="./assets/images/sa-flag.svg" alt="flag"></p-inputGroupAddon>
+                </p-inputGroup>
+            </div>
+            <div class="mb-4 label-wrapper">
+                <label for="email" class="block darkest mb-2">البريد الإلكتروني</label>
+                <p-floatLabel>
+                    <input id="username" type="text" pInputText [(ngModel)]="email" />
+                </p-floatLabel>
+            </div>
+        </div>
+        <div class=" buttons-container">
+            <button (click)="check()" class="p-button primary primary-btn flex mb-3 justify-content-center align-items-center stroke1 w-12">{{ "accountInfo.check" | translate }}</button>
+            <button (click)="closeDialog()" class="p-button secondary-btn flex justify-content-center align-items-center w-12">{{ "accountInfo.close" | translate }}</button>
+        </div>
+    </div>

@@ -1,0 +1,209 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "assets/themes/themes.scss";
+
+html,body{
+font-family: "IBM Medium", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.main-style{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.main-style-15{
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+
+.activeNav{
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    color: var(--color-stroke1);
+    height: 73px;
+}
+
+.activeGreenBorder{
+    left: 9px;
+    bottom: 2px;
+    width: 75px;
+    height: 6px;
+    background-color: #54C08A;
+    border-radius: 4px;
+}
+
+label{
+    font-family: "IBM Bold";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    }
+
+
+    
+.secondary-btn {
+    color: var(--color-dark);
+    background-color: var(--color-stroke1);
+    width: 60px;
+    height: 38px;
+    font-family: "IBM Medium";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    border: 1px solid var(--color-medium);
+    border-radius: 8px;
+}
+
+
+.carousel-title{
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.005em;
+}
+
+.title-dash{
+    border-radius: 25px;
+    width: 21px;
+    height: 5px;
+    background-color: #D6A12D;
+}
+
+.carousel-desc{
+background-color: #D6A12D;
+border-radius: 4px;
+padding-top: 6px;
+padding-bottom: 6px;
+}
+
+.single-product-card{
+    box-shadow: 
+    0px 4px 8px -2px #0000000A,
+    -4px 0px 8px -2px #0000000A,
+    4px 0px 8px -2px #0000000A;
+    border: 1px solid var(--color-lighter);
+    border-radius: 8px;
+    background-color: var(--color-stroke1);
+    width: 234px;
+
+    @media screen and (min-width:1340px) and (max-width:1400px){
+        width: 224px;
+    }
+}
+
+.carousel-company-name{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-wrap: nowrap !important;
+}
+
+.carousel-product-price{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+.rating-wrapper{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    height: 24px;
+    width: 61px;
+    left: 3px;
+    top: 10px;
+}
+
+.contract-img{
+    top: 0;
+    right: 0;
+}
+
+.availability-wrapper, .availability-wrapper-empty{
+    border-radius: 6px;
+    background-color: var(--color-yellowText);
+    right: 11px;
+    top: 10px;
+    padding-inline: 15px !important;
+}
+
+.availability-wrapper-empty{
+    background-color: var(--color-redText);
+}
+
+.carousel-product-img{
+    height: 100px;
+}
+
+.letter-space{
+    letter-spacing: 2px;
+}
+
+.cart-card{
+    box-shadow: 0px 0px 8px 2px #0000000A, 0px 2px 4px -2px #00000014;
+    border-radius: 8px;
+    border: 1px solid var(--color-lighter);
+}
+
+// popup style
+
+.bg-success{
+    background-color: #079454a3;
+}
+
+.bg-error{
+    background-color: #e56c63;
+}
+
+
+.bg-warning{
+    background-color: #dc680396;
+}
+
+.bg-neutral{
+    background-color: #E5E7EB;
+}
+
+
+.header-popup-image{
+    position: absolute;
+    top: 20px;
+    right: 24px;
+}
+
+.header-popup-banner{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    height:8px ;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.text-wrap{
+    text-wrap: wrap;
+}
+
+.text-nowrap{
+    text-wrap: nowrap;
+}

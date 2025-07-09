@@ -1,0 +1,22 @@
+<section class="sm:px-8 px-3 pt-4 pb-5">
+    <div class="grid product-general pb-5 mb-5">
+        <div class="md:col-7 md:col-offset-1">
+            <app-product-gallery />
+        </div>
+        <div class="md:col-4">
+    <app-product-brief  [products]="products"/>
+        </div>
+    </div>
+    <div class="grid g-4 product-indetail">
+        <div class="md:col-6 col-12">
+            <app-product-specs />
+        </div>
+        <div class="md:col-6 col-12">
+    <app-product-ratings  [products]="products"/>
+        </div>
+    </div>
+    <app-product-card />
+</section>
+<section class="recommended-section">
+    <app-carousel [title]="fundLoan"  [subTitle]="subfundLoan" [products]="products" [showAll]="false"/>
+</section>

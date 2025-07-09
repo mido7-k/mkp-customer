@@ -1,0 +1,92 @@
+  
+  @font-face {
+    font-family: "Ge Dinar One Bold";
+    src: url("../fonts/alfont_com_GE-Dinar-One-Bold-1\ 1.otf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Ge Dinar One Light";
+    src: url("../fonts/GEDinarOne-Light\ 1.otf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Ge Dinar One Medium";
+    src: url("../fonts/GEDinarOne-Medium\ 1.otf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "IBM Bold";
+    src: url("../fonts/ibm/IBMPlexSansArabic-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "IBM SemiBold";
+    src: url("../fonts/ibm/IBMPlexSansArabic-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-display: swap;
+  }
+  
+
+  @font-face {
+    font-family: "IBM Medium";
+    src: url("../fonts/ibm/IBMPlexSansArabic-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "IBM Regular";
+    src: url("../fonts/ibm/IBMPlexSansArabic-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+   
+  @font-face {
+    font-family: "IBM Light";
+    src: url("../fonts/ibm/IBMPlexSansArabic-Regular.ttf") format("truetype");
+    font-weight: 300;
+    font-display: swap;
+  }
+  
+
+
+  :root {
+    --font-bold: "IBM Bold";
+    --font-semibold: "IBM SemiBold";
+    --font-medium: "IBM Medium";
+    --font-regular: "IBM Regular";
+    --font-light: "IBM Light";
+  }
+
+  .font-bold {
+    font-family: var(--font-bold);
+  }
+
+  .font-semibold {
+    font-family: var(--font-semibold);
+  }
+
+
+  .font-medium {
+    font-family: var(--font-medium);
+
+  }
+
+  .font-regular {
+    font-family: var(--font-regular);
+
+  }
+
+  .font-light{
+    font-family: var(--font-light);
+
+  }

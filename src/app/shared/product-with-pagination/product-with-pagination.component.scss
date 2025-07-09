@@ -1,0 +1,77 @@
+.filters{
+    top: -42px;
+    left: 0;
+    height: 0;
+}
+
+.carousel-product-title{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+
+
+.circular-carousel-product-img{
+    border: 0.8px solid #DFDFDF;
+    box-shadow: 0px 20px 24px -4px #00000014, 0px 4px 6px 0px #00000000;
+    width: 120px;
+    height: 120px;
+}
+
+::ng-deep .products-pagination .p-dropdown{
+    border: none;
+}
+
+::ng-deep .products-pagination .p-tabview .p-tabview-nav{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 16px;
+    background-color: transparent;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link{
+    font-family: "IBM SemiBold";
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: var(--color-stroke1);
+    background-color: var(--color-yellowText);
+    border: none;
+    border-radius: 20px;
+    padding: 14px 30px;
+    margin-inline-start: 20px;
+}
+
+::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link{
+    font-family: "IBM Regular";
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    color: var(--color-darkest);
+    background-color: var(--color-yellowFill);
+    border: none;
+    border-radius: 20px;
+    padding: 14px 30px;
+    margin-inline-start: 20px;
+}
+
+.results-num{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: #151A31;
+}
+
+.result-border{
+    border-left: 1px solid var(--color-light);
+    padding-inline-end: 10px;
+}
+
+.order-label{
+    font-size: 14px;
+    color: #151A31;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+}

@@ -1,0 +1,70 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 21px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .35s;
+    transition: .35s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17.5px;
+    width: 17.5px;
+    right: 2px;
+    bottom: 1.5px;
+    background-color: white;
+    -webkit-transition: .35s;
+    transition: .35s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--color-primary);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--color-primary);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(-11px);
+    -ms-transform: translateX(-11px);
+    transform: translateX(-11px);
+  }
+  
+  .slider.round {
+    border-radius: 50px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .wallet-balance{
+    margin-inline: 16px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+  }
+  .wallet-balance .currency{
+    font-size: 11px;
+  }

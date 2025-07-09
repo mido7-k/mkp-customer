@@ -1,0 +1,11 @@
+<app-header />
+<app-best-seller />
+<app-filtered-products />
+<section class="recommended-section">
+    <app-carousel [title]="Recommendedtitle"  [subTitle]="recommendedSubTitle" [products]="recommendedProducts"/>
+</section>
+<app-carousel [title]="suppliersTitle"  [products]="suppliers" [circular]="true"/>
+<section class="recommended-section">
+<app-carousel [title]="coffee"  [subTitle]="subCoffee" [products]="recommendedProducts"/>
+</section>
+<app-carousel [title]="seeds"  [subTitle]="subSeeds" [products]="seedsArray"/>

@@ -1,0 +1,23 @@
+<div class="product-specs">
+    <p class="darkest font-bold rate-product mb-4">
+        {{"product.details" | translate}}
+    </p>
+    <div class="specs-wrapper w-12">
+        <div *ngFor="let spec of productSpecs; let i = index" class="flex border-spec" 
+        [ngClass]="{
+          'first-border': i === 0, 
+          'last-radius': i === productSpecs.length - 1,
+          'border-spec': i !== productSpecs.length - 1
+        }">
+            <div class="main-style-15 px-4 w-6 py-2 lighter-bg font-regular darkest" [ngClass]="{
+          'first-spec-border': i === 0,
+          'last-spec-border': i === productSpecs.length - 1
+          }">
+              {{ 'product.' + spec.key | translate }}
+            </div>
+            <div class="main-style-15 px-4 w-6 py-2 font-regular darkest">
+              {{ currentLanguage === 'ar' ? spec.ar : spec.en }}
+            </div>
+          </div>
+    </div>
+</div>

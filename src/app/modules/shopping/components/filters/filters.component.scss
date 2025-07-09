@@ -1,0 +1,26 @@
+.search-input{
+    background-color:#FAFCFC ;
+    border: 1px solid var(--color-light) ;
+    height: 32px;
+    width: 100%;
+}
+
+.filter-value{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.date-wrapper{
+    border-bottom: 2px solid var(--color-light);
+    border-top: 2px solid var(--color-light);
+}
+
+.rate-wrapper{
+    border-bottom: 2px solid var(--color-light);
+}
+
+::ng-deep .shopping .p-slider-horizontal .p-slider-range{
+    height: 8px;
+}

@@ -1,0 +1,31 @@
+.middle-border{
+    border-left: 1px solid var(--color-yellowStrokeWeak);
+    border-right: 1px solid var(--color-yellowStrokeWeak);
+}
+
+.head-title{
+    font-size: 14px;
+    padding-bottom: 10px;
+
+}
+
+.head-label{
+    font-size: 14px;
+    letter-spacing: 1.5%;
+}
+.status-value{
+    border: 1px solid var(--color-yellowStrokeWeak);
+    background-color: var(--color-stroke1);
+    border-radius: 6px;
+}
+
+.contract-number{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.005em;
+}
+
+.loan-date{
+    font-size: 16px;
+    line-height: 24px;
+}

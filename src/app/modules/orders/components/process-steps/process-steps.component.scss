@@ -1,0 +1,120 @@
+.order-detail-wrapper {
+  border: 1px solid var(--color-light);
+  border-radius: 8px;
+}
+
+.detail-title {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+}
+
+.readonly-wrapper {
+  border: 1px solid var(--color-yellowStrokeWeak);
+  background-color: var(--color-warningFill);
+  border-radius: 10px;
+}
+
+.order-num {
+  font-family: Segoe UI;
+  font-size: 20px;
+  line-height: 28px;
+}
+.dot {
+  width: 3px;
+  height: 3.5px;
+  background-color: var(--color-dark);
+  border-radius: 50%;
+}
+
+.product-price {
+  font-family: Segoe UI;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.currency {
+  font-family: Segoe UI;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.expected-date {
+  font-family: Segoe UI;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.stages-title {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+
+.stages-wrapper {
+  border-top: 1px solid #e4e7e9;
+}
+
+.stage-subtitle {
+  font-family: Segoe UI;
+}
+
+.step-one,
+.step-two,
+.step-three,
+.step-four {
+  top: -8px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-stroke1);
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+}
+
+.step-one {
+  right: 0;
+}
+
+.step-two {
+  right: 33%;
+}
+
+.step-three {
+  right: 66%;
+}
+
+.step-four {
+  right: 100%;
+  transform: translateX(24px);
+}
+
+.step-one i {
+  font-size: 12px;
+  margin-top: 6px;
+  padding-inline-end: 2px;
+}
+
+.active-step {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-stroke1);
+}
+
+.step-one.active-step {
+  border: 2px solid var(--color-primary);
+}
+
+
+// .step-two:not(.active-step),
+// .step-three:not(.active-step),
+// .step-four:not(.active-step) {
+//   opacity: 0.4;  
+// }
+
+.step-two:not(.active-step) img,
+.step-three:not(.active-step) img,
+.step-four:not(.active-step) img {
+  filter: grayscale(50%);
+}

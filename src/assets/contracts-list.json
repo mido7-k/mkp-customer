@@ -1,0 +1,290 @@
+[
+  {
+    "contractNumber": {
+      "en": "LC-0000000006",
+      "ar": "LC-0000000006"
+    },
+    "loanType": {
+      "en": "Education Loan",
+      "ar": "قرض التعليم"
+    },
+    "contractDate": {
+      "en": "15/02/2025",
+      "ar": "15/02/2025"
+    },
+    "contractValue": {
+      "en": "200000 SAR",
+      "ar": "200000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "18",
+      "ar": "18"
+    },
+    "status": {
+      "en": "In Progress",
+      "ar": "قيد التنفيذ"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000007",
+      "ar": "LC-0000000007"
+    },
+    "loanType": {
+      "en": "Business Loan",
+      "ar": "قرض تجاري"
+    },
+    "contractDate": {
+      "en": "20/03/2025",
+      "ar": "20/03/2025"
+    },
+    "contractValue": {
+      "en": "500000 SAR",
+      "ar": "500000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "48",
+      "ar": "48"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000008",
+      "ar": "LC-0000000008"
+    },
+    "loanType": {
+      "en": "Home Loan",
+      "ar": "قرض منزل"
+    },
+    "contractDate": {
+      "en": "05/04/2025",
+      "ar": "05/04/2025"
+    },
+    "contractValue": {
+      "en": "400000 SAR",
+      "ar": "400000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "In Progress",
+      "ar": "قيد التنفيذ"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000009",
+      "ar": "LC-0000000009"
+    },
+    "loanType": {
+      "en": "Car Loan",
+      "ar": "قرض سيارة"
+    },
+    "contractDate": {
+      "en": "12/05/2025",
+      "ar": "12/05/2025"
+    },
+    "contractValue": {
+      "en": "180000 SAR",
+      "ar": "180000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "24",
+      "ar": "24"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000010",
+      "ar": "LC-0000000010"
+    },
+    "loanType": {
+      "en": "Education Loan",
+      "ar": "قرض التعليم"
+    },
+    "contractDate": {
+      "en": "25/06/2025",
+      "ar": "25/06/2025"
+    },
+    "contractValue": {
+      "en": "300000 SAR",
+      "ar": "300000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "36",
+      "ar": "36"
+    },
+    "status": {
+      "en": "In Progress",
+      "ar": "قيد التنفيذ"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000011",
+      "ar": "LC-0000000011"
+    },
+    "loanType": {
+      "en": "Business Loan",
+      "ar": "قرض تجاري"
+    },
+    "contractDate": {
+      "en": "01/07/2025",
+      "ar": "01/07/2025"
+    },
+    "contractValue": {
+      "en": "750000 SAR",
+      "ar": "750000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "60",
+      "ar": "60"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000012",
+      "ar": "LC-0000000012"
+    },
+    "loanType": {
+      "en": "Personal Loan",
+      "ar": "قرض شخصي"
+    },
+    "contractDate": {
+      "en": "15/08/2025",
+      "ar": "15/08/2025"
+    },
+    "contractValue": {
+      "en": "120000 SAR",
+      "ar": "120000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "24",
+      "ar": "24"
+    },
+    "status": {
+      "en": "In Progress",
+      "ar": "قيد التنفيذ"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000013",
+      "ar": "LC-0000000013"
+    },
+    "loanType": {
+      "en": "Car Loan",
+      "ar": "قرض سيارة"
+    },
+    "contractDate": {
+      "en": "22/09/2025",
+      "ar": "22/09/2025"
+    },
+    "contractValue": {
+      "en": "300000 SAR",
+      "ar": "300000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "36",
+      "ar": "36"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "contractNumber": {
+      "en": "LC-0000000014",
+      "ar": "LC-0000000014"
+    },
+    "loanType": {
+      "en": "Home Loan",
+      "ar": "قرض منزل"
+    },
+    "contractDate": {
+      "en": "01/10/2025",
+      "ar": "01/10/2025"
+    },
+    "contractValue": {
+      "en": "500000 SAR",
+      "ar": "500000 SAR"
+    },
+    "numberOfInstallments": {
+      "en": "48",
+      "ar": "48"
+    },
+    "status": {
+      "en": "In Progress",
+      "ar": "قيد التنفيذ"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+<div class="cart-card p-4 my-4">
+    <p class="mb-3 mt-0 darkest font-bold delivery-title">{{"checkout.address"| translate}}</p>
+    <div class="flex gap-2 justify-content-between align-items-center">
+        @if(!loading && !editAddressMode ){
+            <p  class="my-0 main-style-15 font-regular darkest">{{chosenAddress}}</p>
+            <p class="my-0 change-address text-nowrap main-style-15 font-regular yellowText cursor-pointer" (click)="changeAddress()">{{"checkout.changeAddress"| translate}}</p>    }
+        </div>
+        @if(!loading && editAddressMode){
+
+          @for(address of allAddresses; track $index){
+              <div  class="flex gap-2 align-items-center px-3 bordered-address  mb-3" [class]="chosenAddress === address? 'address-active': ''">
+       <p-radioButton 
+         [inputId]="'rb' + $index" 
+         [value]="address" 
+         [(ngModel)]="chosenAddress" 
+       />
+       <p class="mb-3 py-0 main-style-15 font-regular darkest">{{ address }}</p>
+     </div>
+        } 
+           <div class="flex justify-content-between mt-4 ">
+            <button  (click)="assignAddress()"
+            class="p-button use-address main-style-15 flex justify-content-center align-items-center dark font-regular py-2"
+          >
+            {{ "checkout.useAddress" | translate }}
+          </button>
+          <div>
+            <p (click)="addAddress()" class="my-0 gap-2 cursor-pointer flex align-items-center primary font-medium add-address main-style"><i class="pi pi-plus"></i> <span class="border-add">{{ "checkout.addAddress" | translate }}</span></p>
+          </div>
+           </div> 
+        }
+        @if(loading){
+            <div class="flex gap-1 align-items-center">
+            <img [class]="loading? 'loader-spin': ''" src="./assets/images/loader-sm.png" alt="spin"><p  class="my-0 main-style-15 font-regular darkest">{{"checkout.loading"| translate}}</p>
+            </div>
+            }
+ </div>

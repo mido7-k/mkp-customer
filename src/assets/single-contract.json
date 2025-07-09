@@ -1,0 +1,75 @@
+[
+    {
+      "contractNumber": "PUR-0000000003",
+      "fund": "175,000",
+      "productNameEn": "Tractor",
+      "productNameAr": "جرار",
+      "purposePrice": "185,000",
+      "statusEn": "Available for Purchase",
+      "statusAr": "متاح للشراء"
+    },
+    {
+      "contractNumber": "PUR-0000000004",
+      "fund": "250,000",
+      "productNameEn": "Plow",
+      "productNameAr": "محراث",
+      "purposePrice": "260,000",
+      "statusEn": "Not Available",
+      "statusAr": "غير متوفر"
+    },
+    {
+      "contractNumber": "PUR-0000000005",
+      "fund": "300,000",
+      "productNameEn": "Irrigation System",
+      "productNameAr": "نظام الري",
+      "purposePrice": "320,000",
+      "statusEn": "Purchased Outside E-Marketplace",
+      "statusAr": "تم الشراء من خارج السوق الإكتروني"
+    },
+    {
+      "contractNumber": "PUR-0000000006",
+      "fund": "400,000",
+      "productNameEn": "Seed Drill",
+      "productNameAr": "آلة بذر",
+      "purposePrice": "420,000",
+      "statusEn": "Available for Purchase",
+      "statusAr": "متاح للشراء"
+    },
+    {
+      "contractNumber": "PUR-0000000007",
+      "fund": "500,000",
+      "productNameEn": "Combine Harvester",
+      "productNameAr": "آلة الحصاد",
+      "purposePrice": "520,000",
+      "statusEn": "Not Available",
+      "statusAr": "غير متوفر"
+    },
+    {
+      "contractNumber": "PUR-0000000008",
+      "fund": "600,000",
+      "productNameEn": "Fertilizer Spreader",
+      "productNameAr": "آلة توزيع الأسمدة",
+      "purposePrice": "630,000",
+      "statusEn": "Purchased Outside E-Marketplace",
+      "statusAr": "تم الشراء من خارج السوق الإكتروني"
+    },
+    {
+      "contractNumber": "PUR-0000000009",
+      "fund": "450,000",
+      "productNameEn": "Greenhouse",
+      "productNameAr": "بيت زجاجي",
+      "purposePrice": "470,000",
+      "statusEn": "Available for Purchase",
+      "statusAr": "متاح للشراء"
+    },
+    {
+      "contractNumber": "PUR-0000000010",
+      "fund": "350,000",
+      "productNameEn": "Sprayer",
+      "productNameAr": "مرش",
+      "purposePrice": "370,000",
+      "statusEn": "Not Available",
+      "statusAr": "غير متوفر"
+    }
+  ]
+  

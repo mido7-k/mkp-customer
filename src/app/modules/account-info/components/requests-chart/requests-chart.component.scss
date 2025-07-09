@@ -1,0 +1,33 @@
+.prepared-requests, .completed-requests, .wallet-balance{
+    padding-top: 11px;
+    padding-bottom: 7px;
+    border-radius: 8px;
+}
+
+.prepared-requests{
+    background-color: #FFF3EB;
+}
+
+.completed-requests{
+    background-color: #EAF7E9;
+}
+
+.wallet-balance{
+    background-color: #E9EAFF;
+}
+
+.numbers{
+font-family: Sans-serif;
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+}
+
+
+.currency{
+font-family:Sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 28px;
+
+}

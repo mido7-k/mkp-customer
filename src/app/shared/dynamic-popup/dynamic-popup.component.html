@@ -1,0 +1,7 @@
+
+<div class="header-popup-banner" [class]="status" ></div>
+<img [src]="imagePath" alt="Invoice Image" class="header-popup-image" />
+<p class="mt-4 mb-2 invoice-created font-semibold darkest">{{ title | translate }}</p>
+<p class="mt-0 mb-3 helper-p font-regular dark">{{ subTitle | translate }}</p>
+<button class="p-button flex justify-content-center align-items-center stroke1 font-medium w-12 mb-2" [class.proceed-btn]="status==='bg-error'" (click)="proceed()" >{{ btnTitle | translate }}</button>
+<button class="p-button close-btn flex justify-content-center align-items-center darkest font-medium w-12" (click)="closeDialog()">{{ "checkout.close" | translate }}</button>

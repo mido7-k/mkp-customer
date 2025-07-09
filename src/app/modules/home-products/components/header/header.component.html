@@ -1,0 +1,64 @@
+<section class="pt-4 sm:mx-8 mx-3">
+    <div class="header-container flex gap-5 p-8 mb-4" style="background: #00000033 url('./assets/images/home-background.svg'); background-position: center; background-size: cover;">
+        <div class="pr-5 pt-5 pb-8">
+            <h1 class="mt-0 mb-4 stroke1 header-title font-bold">
+                {{ "home.investNow" | translate }}
+            </h1>
+            <h1 class="mt-0 mb-6 stroke1 header-title font-bold">
+                {{ "home.bestEquipments" | translate }}
+            </h1>
+            <p class="stroke1 mb-5 header-second font-bold">{{ "home.getLatest" | translate }}
+            </p>
+            <div class="absolute">
+                <button  class="p-button font-bold primary  buy-now-button flex z-2 relative justify-content-center align-items-center" [routerLink]="'/shopping'"> {{ "home.startBuy" | translate }}</button>
+                <div class="relative translated-border z-1"></div>
+            </div>
+        </div>
+        
+        <div class="header-info-container mt-5 mr-8 py-5 pr-5 pl-6">
+            <div class="flex justiify-content-start align-items-center mb-6">
+                <div class="ml-4"><img src="./assets/images/recorder.svg" alt="recorder"></div>
+                <div>
+                    <p class="darkest main-style-15 font-bold  mt-0 mb-1">{{ "home.fundSolutions" | translate }}</p>
+                    <p class="darkest main-style font-medium my-0">{{ "home.fundBenefits" | translate }}</p>
+                </div>
+            </div>
+            <div class="flex justiify-content-start align-items-center  mb-6">
+                <div class="ml-4"><img src="./assets/images/screen.svg" alt="screen"></div>
+                <div>
+                    <p class="darkest main-style-15 font-bold mt-0 mb-1">{{ "home.verifiedProducts" | translate }}</p>
+                    <p class="darkest main-style font-medium my-0">{{ "home.discoverProducts" | translate }}</p>
+                </div>
+            </div>
+            <div class="flex justiify-content-start align-items-center">
+                <div class="ml-4"><img src="./assets/images/id-card.svg" alt="id"></div>
+                <div>
+                    <p class="darkest main-style-15 font-bold mt-0 mb-1"> {{ "home.fullSupport" | translate }}</p>
+                    <p class="darkest main-style font-medium my-0">{{ "home.fromRequest" | translate }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="mb-5 header-carousel" dir="ltr">
+    <p-galleria 
+    [value]="images" 
+    [circular]="true"
+    [responsiveOptions]="responsiveOptions" 
+    [numVisible]="10">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.itemImageSrc" style="width: 100%;" alt="img" />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item >
+            <div #thumbnailItem>
+                <div class="grid grid-nogutter justify-content-center">
+                    <img [src]="item.thumbnailImageSrc" alt="img" />
+                </div>
+                <p class="darkest absolute img-label font-semibold main-style">{{item.title}}</p>
+            </div>
+        </ng-template>
+    </p-galleria>
+</div>
+
+</section>

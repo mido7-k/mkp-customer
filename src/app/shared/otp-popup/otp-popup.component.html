@@ -1,0 +1,25 @@
+<div class="header-popup-banner" [class]="status? status: 'bg-neutral'" ></div>
+<img [src]="imagePath? imagePath : './assets/images/popup-question.svg'" alt="Invoice Image" class="header-popup-image" />
+@if (orderOtp) {<div  class="header-popup-caution font-medium  mt-2 py-1 px-2 text-center">{{ "orders.orderCaution" | translate }}</div>}
+<div [class]="orderOtp? 'mt-2' : 'mt-4'">
+    <div class="mb-3 ">
+        <p class='popup-header font-semibold darkest my-0'>{{ "accountInfo.checkNumber" | translate }}</p>
+        <p class="popup-desc font-regular dark mt-2">{{ "accountInfo.otpSentTo" | translate }}
+            @if(mobile){ 
+                        <span class="dark font-semibold mobileNumber">{{mobile}}</span>
+                        <span  class="dark mobileNumber">(966)</span>   
+                        }
+        </p>
+    </div>
+    <div dir="ltr" class="mb-3 input-warpper flex justify-content-center ">
+        <p-inputOtp id="otpInput" [length]="5" [(ngModel)]="value" [integerOnly]="true" />
+    </div>
+    <button (click)="submitOtp()" [disabled]="!isOtpValid()" class="p-button primary primary-btn font-medium flex justify-content-center align-items-center stroke1">{{ "accountInfo.send" | translate }}</button>
+    <div class="flex mt-3 justify-content-center align-items-center">
+        @if(!showTimer){<div (click)="resendOtp()" class="cursor-pointer sendAgain font-regular yellowText">{{ "accountInfo.sendOtpAgain" | translate }}</div>}
+        @if(showTimer){
+            <div class="ml-2">{{ "accountInfo.sendOtpAgain" | translate }}</div>
+            <div class="dark timer">{{ timerFormat() }}</div>
+        }
+    </div>
+</div>

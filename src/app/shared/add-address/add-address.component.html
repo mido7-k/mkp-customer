@@ -1,0 +1,77 @@
+<div class="header-popup-banner" [class]="status" ></div>
+<img [src]="imagePath" alt="Invoice Image" class="header-popup-image" />
+<p class="address-header darkest font-bold mb-3 mt-4 pt-0" >{{ "checkout.addAddress" | translate }}</p>
+<div class="grid grid-nugutter">
+    <div class=" label-wrapper col-12">
+        <label for="username" class="block darkest font-bold mb-1 required-input">{{ "checkout.fullName" | translate }}</label>
+        <p-floatLabel>
+            <input id="username" required="true" type="text" pInputText [(ngModel)]="fullname"/>
+        </p-floatLabel>
+    </div>
+    
+    <div class="md:col-6">
+        <div class=" label-wrapper">
+            <label for="district" class="block darkest font-bold mb-1 required-input">{{ "checkout.district" | translate }}</label>
+            <p-floatLabel>
+                <input id="district" required="true" type="text" pInputText [(ngModel)]="district"/>
+            </p-floatLabel>
+        </div>
+    </div>
+    <div class="md:col-6">
+        <div class="label-wrapper">
+            <label for="city" class="block darkest font-bold mb-1 required-input">{{ "checkout.city" | translate }}</label>
+            <p-floatLabel>
+                <input id="city" type="text" pInputText [(ngModel)]="city"/>
+            </p-floatLabel>
+        </div>
+    </div>
+    <div class=" label-wrapper col-12">
+        <label for="street" class="block darkest font-bold mb-1 required-input">{{ "checkout.street" | translate }}</label>
+        <p-floatLabel>
+            <input id="street" type="text" pInputText [(ngModel)]="street"/>
+        </p-floatLabel>
+    </div>
+    <div class="md:col-4">
+        <div class=" label-wrapper">
+            <label for="unit" class="block darkest font-bold mb-1">{{ "checkout.unit" | translate }}</label>
+            <p-floatLabel>
+                <input id="unit" type="text" pInputText [(ngModel)]="unit"/>
+            </p-floatLabel>
+        </div>
+    </div>
+    <div class="md:col-4">
+        <div class=" label-wrapper">
+            <label for="building" class="block darkest font-bold mb-1 ">{{ "checkout.building" | translate }}</label>
+            <p-floatLabel>
+                <input id="building" type="text" pInputText [(ngModel)]="building"/>
+            </p-floatLabel>
+        </div>
+    </div>
+    <div class="md:col-4">
+        <div class=" label-wrapper">
+            <label for="postalCode" class="block darkest font-bold mb-1"> {{ "checkout.postalCode" | translate }}</label>
+            <p-floatLabel>
+                <input id="postalCode" type="text" pInputText [(ngModel)]="postalCode"/>
+            </p-floatLabel>
+        </div>
+    </div>
+    <div class=" label-wrapper flex gap-2 align-items-center col-12 mb-2">
+        <p-checkbox 
+        [(ngModel)]="checked" 
+        [binary]="true" 
+        inputId="binary" />
+        <label for="primaryAddress" class="darkest font-light light-label">{{ "checkout.primaryAddress" | translate }}</label>
+    </div>
+    <div class="flex lg:flex-nowrap flex-wrap justify-content-center gap-4 buttons-container w-12 mb-3">
+        <button (click)="saveAddress()"
+          class="p-button primary cancel-btn flex justify-content-center align-items-center font-medium stroke1 w-12 py-1"
+        >
+          <span class="inline-block ml-2">{{ "checkout.save" | translate }}</span>
+        </button>
+        <button (click)="close()"
+        class="p-button save-btn flex justify-content-center align-items-center w-12 dark font-light py-1"
+      >
+        {{ "checkout.cancel" | translate }}
+      </button>
+      </div>
+</div>

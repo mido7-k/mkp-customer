@@ -1,0 +1,135 @@
+::ng-deep .status-wrapper .success .p-tag {
+  background: var(--color-greenFill);
+  font-family: "IBM Bold";
+  font-size: 14px;
+  line-height: 20px;
+  color: #085d3a;
+  text-wrap: nowrap;
+}
+
+::ng-deep .status-wrapper .danger .p-tag {
+  background: var(--color-warningFill);
+  font-family: "IBM Bold";
+  font-size: 14px;
+  line-height: 20px;
+  color: #93370d;
+  text-wrap: nowrap;
+}
+
+::ng-deep .status-wrapper .p-tag .pi {
+  font-size: 10px;
+}
+
+.order-date {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.order-detail-wrapper {
+  border: 1px solid var(--color-light);
+  border-radius: 8px;
+}
+
+.detail-title {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+}
+
+
+.contract-number {
+  border-bottom: 1.6px solid var(--color-primary);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.cart-btn {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  height: 48px;
+}
+
+.prices-container {
+  border-radius: 6px;
+  background-color: var(--color-backgroundGrey);
+}
+
+.total-price {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  color: #191c1f;
+}
+
+.bordered-prices {
+  border-bottom: 1px solid var(--color-light);
+}
+
+.fund-price {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.currency-price {
+  font-size: 11px;
+}
+
+.rest-price {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+}
+
+.fund-price-rest {
+  font-family: Segoe UI;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0.015em;
+}
+
+.currency-price-rest {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.amount {
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.product-price {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+.proceed-btn {
+  background-color: var(--color-redText);
+  border: none;
+    font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+}
+
+.receipe-btn {
+  background-color: var(--color-stroke1);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  border: 1px solid var(--color-medium);
+}
+

@@ -1,0 +1,51 @@
+<div class="sm:px-8 px-3">
+
+    <h2 class="font-bold darkest name-user">
+        مرحباً، محمد
+    </h2>
+    <p class="dark font-medium  main-style">{{"accountInfo.updateFromAccount" | translate}}</p>
+    </div>
+<app-read-only>
+    <div class="flex align-items-center  flex-column sm:flex-row  xl:pl-8 md:pl-6 py-1">
+           
+        <div class="flex flex-column align-items-center pl-8">
+            <div class="darkest pb-2  main-style font-bold">{{ person.labelValue }}</div>
+            <div class="dark main-style font-medium ">{{ person.NameValue }}</div>
+        </div>
+           <div class="flex flex-column align-items-center">
+            <div class="darkest pb-2  main-style font-bold">{{ person.birthLabel }}</div>
+            <div class="dark main-style font-serif">{{ person.birthValue }}</div>
+        </div>
+        <div class="flex flex-column align-items-center pr-8">
+            <div class="darkest pb-2  main-style font-bold">{{ person.hejriBirthLabel }}</div>
+            <div class="dark main-style font-serif">{{ person.hejriBirthValue }}</div>
+        </div>
+    </div>
+
+    <div class="flex middle-border xl:px-8 md:px-6  flex-column sm:flex-row">
+        <div class="flex flex-column align-items-center">
+            <div class="darkest pb-2  main-style font-bold">{{ nationality.nationalityLabel }}</div>
+            <div class="dark main-style font-regular">{{ nationality.nationalityValue }}</div>
+        </div>
+        <div class="flex flex-column align-items-center pr-8">
+            <div class="darkest pb-2  main-style font-bold">{{ nationality.typeLabel }}</div>
+            <div class="dark main-style font-regular">{{ nationality.typeValue }}</div>
+        </div>
+    </div>
+    <div class="flex md:pl-4  flex-column sm:flex-row">
+        <div class="flex flex-column align-items-center xl:pr-8 md:pr-2">
+            <div class="darkest pb-2  main-style font-bold">{{ identity.idLabel }}</div>
+            <div class="dark main-style font-serif">{{ identity.idValue }}</div>
+        </div>
+        <div class="flex flex-column align-items-center  pr-8">
+            <div class="darkest pb-2  main-style font-bold">{{ identity.idExpiryLabel }}</div>
+            <div class="dark main-style font-serif">{{ identity.idExpiryValue }}</div>
+        </div>
+    </div>
+</app-read-only>
+
+<div class="grid flex-column md:flex-row align-items-start w-100 mt-3 sm:mx-8 mx-3">
+    <div class="md:col-8 col-12"><app-info-card /></div>
+    <div class="md:col-4 col-12"><app-requests-chart /></div>
+    <div class="md:col-12 col-12"><app-table [dataList]="[]" /></div>
+</div>

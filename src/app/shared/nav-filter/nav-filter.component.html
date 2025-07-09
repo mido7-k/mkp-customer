@@ -1,0 +1,58 @@
+<div class="flex align-items-center search-wrapper relative">
+  
+    <div (click)="toggleShowFilter()"  [class]="showFilters ? 'activeNav': 'darkest'"  #searchIcon
+      [attr.tabindex]="0"
+      class="  px-3  flex align-items-center cursor-pointer"
+      >
+          <i class="pi pi-search" ></i>
+        <div class="mr-2 font-medium main-style-15">{{"navbar.search" | translate}} </div>
+    </div>
+  <div  [class]="showFilters? 'absolute activeGreenBorder': ''"></div>
+</div>
+
+
+
+@if( showFilters){
+<div class="menu-filter-wrapper-layer fixed z-3"  >
+  <div class="menu-filter-content text-right px-8 flex justify-content-start" #filterPanel>
+   
+    <div class="categories-wrapper">
+      <ul class="list-none mt-0 pr-0">
+        @for (category of categories; track category.id) {
+        <li
+          class="text-nowrap cursor-pointer main-style font-medium sm:pl-8 pl-4 pr-4 darkest vertical-align-middle flex align-items-center justify-content-start"
+          (keydown)="onCategoryKeydown($event, category)"
+          [attr.tabindex]="0"
+          (click)="selectCategory(category)"
+          [ngClass]="{ warningFill: selectedCategory?.id === category.id }"
+        >
+          {{ category.nameAr }}
+        </li>
+        }
+      </ul>
+    </div>
+    <div class="prducts-list-wrapper p-6">
+      
+  <p-iconField iconPosition="right">
+    <p-inputIcon styleClass="pi pi-search darkest" />
+    <input
+      type="text"
+      class="border-round-right-sm border-round-left-sm"
+      pInputText
+      [placeholder]="'navbar.search' |translate"
+      [(ngModel)]="searchInputValue"
+    />
+  </p-iconField>
+      <div class="pt-4 category-header font-bold darkest pb-3">{{selectedCategory?.nameAr}}</div>
+      <div class="flex flex-wrap p-3" dir="rtl">
+        @for (product of selectedProducts; track $index){
+        <div class=" flex flex-column align-items-center justify-content-center pl-8 pb-6">
+          <div class="img-list-wrapper flex justify-content-center align-items-center"><img [src]="product.imageUrl" alt="product image" /></div>
+          <p class="darkest product-list-item font-medium main-style">{{product.nameAr}}</p>
+        </div>
+    }
+      </div>
+    </div>
+  </div>
+</div>
+}

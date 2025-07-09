@@ -1,0 +1,25 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<section class="sm:px-8 px-3 pt-4 pb-5">
+    <div class="flex flex-wrap gap-4 align-items-start justify-content-start pb-8">
+        <div class="address-wrapper cursor-pointer flex flex-column align-items-center p-4"  (click)="addAddress()">
+            <img src="./assets/images/add.svg" alt="add"/>
+            <p class="my-0 darkest font-bold">{{ "address.add" | translate }}</p>
+        </div>
+            @for(address of allAddresses; track $index){
+                 <div class="address-wrapper cursor-pointer flex flex-column align-items-start px-5 py-4"  (click)="assignPrimary($index)">
+                    <div class="flex justify-content-between align-items-center relative w-12  mb-3">
+                        <p class="address-name my-0 darkest font-semibold main-style-15 ">محمد الدوسري</p>
+                      @if($index === chosenIndex){  <div class="absolute primary font-medium main-style chosen-address text-nowrap p-1">{{ "address.primaryAddress" | translate }}</div>}
+                    </div>
+                    <p class="mt-0 mb-3 main-style darkest font-regular">{{address}}</p>
+                   @if($index ===0){ <p class="my-0 medium main-style-15 font-regular">{{ "address.national" | translate }}</p>}
+                  @if($index !==0){  <div class="flex  gap-4 mr-3">
+                    <div class="darkest font-regular main-style flex gap-1" (click)="addAddress($event, $index)"> <img src="./assets/images/edit-sm.svg" alt="edit"/> {{ "address.edit" | translate }}</div>
+                    <div class="redText font-regular main-style flex gap-1" (click)="deleteAddress($event, $index)"> <img src="./assets/images/delete-sm.svg" alt="delete-icon" /> {{ "address.delete" | translate }}</div>
+                   </div>
+                }
+                 </div>
+        }
+    </div>
+</section>

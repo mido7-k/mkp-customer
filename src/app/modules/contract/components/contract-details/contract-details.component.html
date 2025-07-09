@@ -1,0 +1,55 @@
+<div class="flex justify-content-start align-items-center sm:px-8 px-3 mt-5">
+    <div class="darkest font-bold contract-number">{{"contracts.theContract"| translate}}</div>
+    <div class="mx-2 contract-number darkest font-light">{{contractId}}</div>
+    <div><img src="./assets/images/arrow-down-black.svg" alt="arrow"></div>
+</div>
+
+<div class="mb-5">
+    <app-read-only >
+        <div class="flex align-items-center flex-column sm:flex-row  xl:pl-6 md:pl-6">
+               
+            <div class="flex flex-column align-items-center pl-6">
+                <div class="darkest head-title font-bold">{{ loan.typeLabel }}</div>
+                <div class="dark main-style font-regular">{{ loan.typeValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center pl-6">
+                <div class="darkest head-title font-bold">{{ loan.projectLabel }}</div>
+                <div class="dark main-style font-regular">{{ loan.projectValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center pl-6">
+                <div class="darkest head-title font-bold">{{ loan.groupLabel }}</div>
+                <div class="dark main-style font-regular">{{ loan.projectValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center">
+                <div class="darkest head-title font-bold">{{ loan.nameLabel }}</div>
+                <div class="dark main-style font-regular">{{ loan.nameValue }}</div>
+            </div>
+        </div>
+    
+        <div class="flex middle-border xl:px-6 md:px-6 flex-column sm:flex-row">
+            <div class="flex flex-column align-items-center">
+                <div class="darkest head-title font-bold">{{ loan.dateLabel }}</div>
+                <div class="dark main-style font-serif loan-date">{{ loan.dateValue }}</div>
+            </div>
+        </div>
+        <div class="flex  md:pl-4  flex-column sm:flex-row">
+            <div class="flex flex-column align-items-center xl:pr-6 md:pr-2">
+                <div class="darkest head-title font-bold">{{ loan.purposesLabel }}</div>
+                <div class="dark main-style font-regular">{{ loan.purpoesValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center  pr-6">
+                <div class="darkest head-title font-bold">{{ loan.priceLabel }}</div>
+                <div class="dark main-style font-serif">{{ loan.priceValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center xl:pr-6 md:pr-2">
+                <div class="darkest head-title font-bold">{{ loan.restLabel }}</div>
+                <div class="dark main-style font-serif">{{ loan.restValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center  pr-6">
+                <div class="darkest head-title pb-1 font-bold">{{ loan.statusLabel }}</div>
+                <div class="yellowText px-3 py-1 status-value main-style font-regular">{{ loan.statusValue }}</div>
+            </div>
+        </div>
+    </app-read-only>
+</div>
+<app-purposes />

@@ -1,0 +1,28 @@
+.invoice-created {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+  }
+  
+  .helper-p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+  }
+  
+  .close-btn{
+      background-color: var(--color-backgroundGrey);
+      border: none;
+  }
+  
+  .popup-label{
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  }
+
+  .middle-label{
+    border-left: 1px solid var(--color-light);
+    border-right: 1px solid var(--color-light);
+
+  }

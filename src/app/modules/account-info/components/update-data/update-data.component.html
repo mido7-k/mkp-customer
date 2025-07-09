@@ -1,0 +1,13 @@
+  @if(verified){
+    <div class="header-popup-banner" [class]="verifiedBackground" ></div>
+    <img [src]="verifiedImgPath" alt="Invoice Image" class="header-popup-image" />
+           <p class="darkest font-semibold popup-header mb-2">{{verifiedtitle | translate }}</p>
+           <p class="main-style-15 font-regular mt-0 mb-4">{{verifiedSubtitle | translate }}</p>
+           <button class="p-button primary primary-btn flex justify-content-center align-items-center stroke1 w-12 mb-3">{{ "accountInfo.updateNow" | translate }} </button>
+  } @else {
+        <div class="header-popup-banner" [class]="unverifiedBackground" ></div>
+<img [src]="unverifiedImgPath" alt="Invoice Image" class="header-popup-image" />
+        <p class="darkest font-semibold popup-header mb-2">{{unverifiedtitle | translate }}</p>
+        <p class="main-style-15 font-regular mt-0 mb-4">{{unverifiedSubtitle | translate }}</p>
+  }
+    <button (click)="closeDialog()" class="p-button close-btn darkest flex justify-content-center align-items-center w-12">{{ "accountInfo.close" | translate }}</button>

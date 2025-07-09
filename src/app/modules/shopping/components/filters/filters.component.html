@@ -1,0 +1,51 @@
+<section class="shopping">
+  <p class="darkest font-semibold main-style my-3">
+    {{ "shopping.filterResults" | translate }}
+  </p>
+  <p-iconField iconPosition="right">
+    <p-inputIcon styleClass="pi pi-search" />
+    <input
+      type="text"
+      class="border-round-right-xl border-round-left-xl search-input"
+      pInputText
+      [placeholder]="'shopping.search' | translate"
+      [(ngModel)]="searchProductsValue"
+    />
+  </p-iconField>
+  <div>
+    <p class="darkest font-bold main-style mb-3 mt-4">
+      {{ "shopping.price" | translate }}
+    </p>
+    <div>
+      <p-slider
+        [(ngModel)]="rangePrices"
+        [max]="500" 
+        [range]="true"
+        (onSlideEnd)="updatePrices()"
+      >
+      </p-slider>
+    </div>
+    <div class="flex justify-content-between mt-3" dir="ltr">
+      <div class="flex align-items-center" [dir]="currentDirection">
+        <span class="dark font-medium main-style">{{ "shopping.from" | translate }}</span>
+        <div class="darkest inline-block mx-1 filter-value">
+          ${{ fromPrice }}
+        </div>
+      </div>
+      <div class="flex align-items-center" [dir]="currentDirection">
+        <span class="dark font-medium main-style">{{
+          "shopping.to" | translate
+        }}</span>
+        <div class="darkest inline-block mx-1 filter-value">${{ toPrice }}</div>
+      </div>
+    </div>
+      <div class="flex date-wrapper main-style mt-4 py-4 align-items-center cursor-pointer pr-3">
+        <i class="pi pi-plus" style="font-size: 13px;color: var(--color-primary);"></i>
+        <p class="darkest font-semibold my-0 mr-2 align-items-center">{{ "shopping.date" | translate }}</p>
+      </div>
+      <div class="flex py-4 align-items-center rate-wrapper main-style cursor-pointer pr-3">
+        <i class="pi pi-plus" style="font-size: 13px;color: var(--color-primary);"></i>
+        <p class="darkest font-semibold my-0 mr-2 align-items-center">{{ "shopping.rate" | translate }}</p>
+      </div>
+  </div>
+</section>

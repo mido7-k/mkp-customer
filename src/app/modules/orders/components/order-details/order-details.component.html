@@ -1,0 +1,148 @@
+<section class="sm:px-8 px-3 pt-4 pb-5">
+    <div class="flex justify-content-between align-items-center mb-3">
+        <div class="flex flex-column align-items-start">
+            <div class="flex align-items-center justify-content-start mb-2">
+                <div class="title-dash ml-3"></div>
+                <span class="carousel-title darkest font-bold">{{ "orders.orderDetails" | translate }}</span>
+            </div>
+            <div class="order-date dark">10/1/2025</div>
+        </div>
+        <div class="status-wrapper">
+            <p-tag [rounded]="true" [class]="status ==='orders.Completed'? 'success': 'danger'">
+                <div class="flex align-items-center gap-2 px-1">
+                    <i class="pi pi-circle-on"></i>
+                    <span>
+                      {{ status | translate}}
+                    </span>
+                </div>
+            </p-tag>
+        </div>
+    </div>
+    <div class="grid ">
+        <div class="md:col-5 col-12">
+            <div class="order-detail-wrapper px-4 py-3 mb-3">
+                <div class="flex gap-2 mb-3">
+                    <img src="./assets/images/order-document.svg" alt="paper">
+                    <p class="my-0 detail-title darkest font-semibold " >{{ "orders.theContract" | translate }}</p>
+                </div>
+                <div class="flex align-items-center gap-2">
+                    <p class="my-0 dark main-style">{{ "orders.belongs" | translate }}</p>
+                    <div class="contract-number primary font-medium">{{ "orders.theContract" | translate }} <span>LC-0000000003</span></div>
+                </div>
+            </div>
+            <div class="order-detail-wrapper px-4 py-3 mb-3">
+                <div class="flex gap-2 mb-3">
+                    <img src="./assets/images/order-key.svg" alt="paper">
+                    <p class="my-0 detail-title darkest font-semibold " >{{ "orders.num" | translate }}</p>
+                </div>
+           
+                    <p class="my-0 dark main-style">#XYZ987654</p>
+            
+            </div>
+            <div class="order-detail-wrapper px-4 py-3 mb-3">
+                <div class="flex gap-2 mb-3">
+                    <img src="./assets/images/order-address.svg" alt="paper">
+                    <p class="my-0 detail-title darkest font-semibold " >{{ "orders.address" | translate }}</p>
+                </div>
+           
+                    <p class="my-0 dark main-style">{{address}}</p>
+            
+            </div>
+            <div class="order-detail-wrapper px-4 py-3 mb-3">
+                <div class="flex gap-2 mb-3">
+                    <img src="./assets/images/order-paper.svg" alt="paper">
+                    <p class="my-0 detail-title darkest font-semibold " >{{ "orders.orderDetails" | translate }}</p>
+                </div>
+                <div class="flex align-items-center justify-content-between gap-2">
+                    <div class="flex align-items-center gap-4 product-item">
+                        <div class="product-wrapper">
+                            <img src="./assets/images/products/tracktor.svg" alt="product">
+                        </div>
+                        <div class="flex gap-4">
+                            
+                            <p class="my-0 main-style-15 font-regular darkest">
+                                @if(currentLanguage === 'ar'){
+                                تراكتور
+                                }@else{
+                                    Tracktor
+                                }
+                            </p>
+                            <span class="amount main-style-15 darkest">1x</span>
+                        </div>
+                    </div>
+                    <p class="mb-0">
+                         @if(currentLanguage === 'ar'){
+                             <span class="currency">SAR</span>
+                        <span class="inline-block px-2 product-price darkest">185,000</span>
+                         }@else {
+                                <span class="inline-block px-2 product-price darkest">185,000</span>
+                        <span class="currency">SAR</span>
+                         }
+                    </p>
+
+                </div>
+            </div>
+            <div class="prices-wrapper">
+                <div class="prices-container py-3 px-4 mb-4">
+                    <p class="font-regular total-price mt-0 mb-3"  >{{ "cart.totalRequest" | translate }}</p>
+                    <div class="bordered-prices pb-3 mb-3">
+                        <div class="flex justify-content-between ">
+                            <p class="my-0 medium font-medium main-style">{{ "cart.totalPrice" | translate }}</p>
+                            <p class="my-0 darkest fund-price flex gap-1">
+                                @if(currentLanguage === 'ar'){
+                                    <span class="currency-price">SAR</span>
+                                <span >{{totalPrice}}</span> 
+                                }@else {
+                                <span>{{totalPrice}}</span> 
+                                <span class="currency-price">SAR</span>
+                                }
+                            </p>
+                        </div>
+                        <div class="flex justify-content-between mt-3">
+                            <p class="my-0 medium font-medium main-style">{{ "cart.fundPrice" | translate }}</p>
+                            <p class="my-0 darkest fund-price flex gap-1">
+                                @if(currentLanguage === 'ar'){
+                                    <span class="currency-price">SAR</span>
+                                    <span>{{fundPrice}}</span> 
+                                }@else {
+                                <span>{{fundPrice}}</span> 
+                                <span class="currency-price">SAR</span>
+                                }
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="flex justify-content-between align-items-center darkest font-bold ">
+                        <p class="rest-price my-0">{{ "orders.paidPrice" | translate }}</p>
+                        <p class="my-0 darkest fund-price-rest flex gap-1 ">
+                            @if(currentLanguage === 'ar'){
+                                <span class="currency-price-rest">SAR</span>
+                            <span >{{restPrice}}</span> 
+                            }@else {
+                            <span>{{restPrice}}</span> 
+                            <span class="currency-price-rest">SAR</span>
+                            }
+                        </p>
+                    </div>
+                </div>
+             @if(status !=='orders.Completed'){
+
+                 <button   (click)="confirmCancel()"
+                  class="p-button flex justify-content-center align-items-center  font-medium w-12 mb-2"
+                  [class]="status ==='orders.In Progress'? 'stroke1 proceed-btn': 'darkest receipe-btn'">
+                  @if(status === 'orders.In delivery'){
+                  <span class="inline-block font-bold ">{{ "orders.confirmReceive" | translate }}</span>
+                  }@else {
+                      <i class="pi pi-times"></i>
+                        <span class="inline-block mr-2 font-bold ">{{ "delete" | translate }}</span>
+                  }
+                </button>
+             } 
+
+            </div>
+        </div>
+        <div class="md:col-7 col-12">
+            <app-process-steps  [status]="status"/>
+        </div>
+    </div>
+</section>

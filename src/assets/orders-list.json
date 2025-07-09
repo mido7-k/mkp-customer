@@ -1,0 +1,1704 @@
+[
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "In Delivery",
+      "ar": "قيد الشحن"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H12",
+      "ar": "#B1Y5H12"
+    },
+    "orderValue": {
+      "en": "175,000 SAR",
+      "ar": "175,000 SAR"
+    },
+    "orderDate": {
+      "en": "01/05/2024",
+      "ar": "01/05/2024"
+    },
+    "numberOfProducts": {
+      "en": "10",
+      "ar": "10"
+    },
+    "status": {
+      "en": "In Progress",
+      "ar": "قيد التجهيز"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H13",
+      "ar": "#B1Y5H13"
+    },
+    "orderValue": {
+      "en": "95,000 SAR",
+      "ar": "95,000 SAR"
+    },
+    "orderDate": {
+      "en": "12/06/2024",
+      "ar": "12/06/2024"
+    },
+    "numberOfProducts": {
+      "en": "3",
+      "ar": "3"
+    },
+    "status": {
+      "en": "Order Ready for Pickup",
+      "ar": "قيد الإستلام"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H8",
+      "ar": "#B1Y5H8"
+    },
+    "orderValue": {
+      "en": "185,000 SAR",
+      "ar": "185,000 SAR"
+    },
+    "orderDate": {
+      "en": "10/01/2024",
+      "ar": "10/01/2024"
+    },
+    "numberOfProducts": {
+      "en": "6",
+      "ar": "6"
+    },
+    "status": {
+      "en": "Pending Payment",
+      "ar": "بإنتظار الدفع"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H9",
+      "ar": "#B1Y5H9"
+    },
+    "orderValue": {
+      "en": "250,000 SAR",
+      "ar": "250,000 SAR"
+    },
+    "orderDate": {
+      "en": "15/02/2024",
+      "ar": "15/02/2024"
+    },
+    "numberOfProducts": {
+      "en": "12",
+      "ar": "12"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H10",
+      "ar": "#B1Y5H10"
+    },
+    "orderValue": {
+      "en": "125,000 SAR",
+      "ar": "125,000 SAR"
+    },
+    "orderDate": {
+      "en": "18/03/2024",
+      "ar": "18/03/2024"
+    },
+    "numberOfProducts": {
+      "en": "8",
+      "ar": "8"
+    },
+    "status": {
+      "en": "Waiting for Supplier Approval",
+      "ar": "بإنتظار موافقة المورد"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "orderNumber": {
+      "en": "#B1Y5H11",
+      "ar": "#B1Y5H11"
+    },
+    "orderValue": {
+      "en": "300,000 SAR",
+      "ar": "300,000 SAR"
+    },
+    "orderDate": {
+      "en": "20/04/2024",
+      "ar": "20/04/2024"
+    },
+    "numberOfProducts": {
+      "en": "5",
+      "ar": "5"
+    },
+    "status": {
+      "en": "Order Accepted",
+      "ar": "تم قبول الطلب"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  }
+]

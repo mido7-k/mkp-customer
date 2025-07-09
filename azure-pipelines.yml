@@ -1,0 +1,33 @@
+trigger:
+  - Development
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '18.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm cache clean --force
+      npm install
+    displayName: 'Install npm packages'
+
+  - script: |
+      npx ng lint
+    displayName: 'Lint Check'
+
+  - script: |
+      npx ng build --configuration production
+    displayName: 'Build Angular App'
+
+  - script: |
+      npx ng run marketplace:server:production
+    displayName: 'Build Angular Universal'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: dist/
+      artifactName: 'dist'

@@ -1,0 +1,1655 @@
+[
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  }, {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  }, {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  }, {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#Y4N7O9",
+      "ar": "#Y4N7O9"
+    },
+    "fullName": {
+      "en": "Mohammed Ali",
+      "ar": "محمد علي"
+    },
+    "email": {
+      "en": "mohammed.ali@example.com",
+      "ar": "mohammed.ali@example.com"
+    },
+    "subject": {
+      "en": "Privacy policy inquiry",
+      "ar": "استفسار عن سياسة الخصوصية"
+    },
+    "priority": {
+      "en": "Low",
+      "ar": "منخفضة"
+    },
+    "date": {
+      "en": "12/01/2025",
+      "ar": "12/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#B4N7K9",
+      "ar": "#B4N7K9"
+    },
+    "fullName": {
+      "en": "John Doe",
+      "ar": "محمد الدوسري"
+    },
+    "email": {
+      "en": "john.doe@example.com",
+      "ar": "john.doe@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "10/01/2025",
+      "ar": "10/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+    "ticketNumber": {
+      "en": "#L4N7J9",
+      "ar": "#L4N7J9"
+    },
+    "fullName": {
+      "en": "Jane Doe",
+      "ar": "سارة الشمري"
+    },
+    "email": {
+      "en": "jane.doe@example.com",
+      "ar": "jane.doe@example.com"
+    },
+    "subject": {
+      "en": "Account information update",
+      "ar": "طلب تحديث معلومات الحساب"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "11/01/2025",
+      "ar": "11/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#P4N7K9",
+      "ar": "#P4N7K9"
+    },
+    "fullName": {
+      "en": "Ahmed Smith",
+      "ar": "أحمد سميث"
+    },
+    "email": {
+      "en": "ahmed.smith@example.com",
+      "ar": "ahmed.smith@example.com"
+    },
+    "subject": {
+      "en": "Payment inquiry",
+      "ar": "استفسار حول الدفع"
+    },
+    "priority": {
+      "en": "High",
+      "ar": "عالية"
+    },
+    "date": {
+      "en": "13/01/2025",
+      "ar": "13/01/2025"
+    },
+    "status": {
+      "en": "Completed",
+      "ar": "مكتمل"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  },
+  {
+   "ticketNumber": {
+      "en": "#H2Z7K5",
+      "ar": "#H2Z7K5"
+    },
+    "fullName": {
+      "en": "Alice Jones",
+      "ar": "أليس جونز"
+    },
+    "email": {
+      "en": "alice.jones@example.com",
+      "ar": "alice.jones@example.com"
+    },
+    "subject": {
+      "en": "Login issue",
+      "ar": "مشكلة في تسجيل الدخول"
+    },
+    "priority": {
+      "en": "Medium",
+      "ar": "متوسطة"
+    },
+    "date": {
+      "en": "14/01/2025",
+      "ar": "14/01/2025"
+    },
+    "status": {
+      "en": "In progress",
+      "ar": "قيد الاجراء"
+    },
+    "actions": [
+      {
+        "en": "View Details",
+        "ar": "عرض التفاصيل"
+      }
+    ]
+  }
+]

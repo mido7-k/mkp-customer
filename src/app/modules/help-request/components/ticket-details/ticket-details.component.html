@@ -1,0 +1,154 @@
+<div class="flex justify-content-start align-items-center sm:px-8 px-3 mt-5">
+    <div class="flex flex-wrap justify-content-between align-items-center  w-12">
+        <div class="flex">
+
+            <div class="darkest font-bold contract-number">{{"help.ticketDetails"| translate}}</div>
+            <div class="mx-2 contract-number darkest font-light">{{ticketId}}</div>
+        </div>
+        <button class="p-button secondary-btn w-auto font-regular main-style-15" (click)="closeTicket()">
+            {{"help.close"| translate}}
+        </button>
+    </div>
+</div>
+
+<div class="mb-4">
+    <app-read-only >
+        <div class="flex align-items-center flex-column sm:flex-row xl:pl-8 pl-4 gap-6">
+               
+            <div class="flex flex-column align-items-center ">
+                <div class="darkest head-title font-bold">{{ ticket.nameLabel }}</div>
+                <div class="dark main-style font-regular">{{ ticket.nameValue }}</div>
+            </div>
+
+            <div class="flex flex-column align-items-center ">
+                <div class="darkest head-title font-bold">{{ ticket.nameLabel }}</div>
+                <div class="dark main-style font-regular">{{ ticket.nameValue }}</div>
+            </div>
+        </div>
+    
+        <div class="flex middle-border  xl:px-6 md:px-6 flex-column sm:flex-row gap-8">
+            <div class="flex flex-column align-items-center">
+                <div class="darkest head-title font-bold">{{ ticket.cdateLabel }}</div>
+                <div class="dark main-style font-serif loan-date">{{ ticket.cdateValue }}</div>
+            </div>
+               <div class="flex flex-column align-items-center">
+                <div class="darkest head-title font-bold">{{ ticket.ldateLabel }}</div>
+                <div class="dark main-style font-serif loan-date">{{ ticket.ldateValue }}</div>
+            </div>
+        </div>
+        <div class="flex   flex-column sm:flex-row gap-6 pr-8">
+            <div class="flex flex-column align-items-center ">
+                <div class="darkest head-title font-bold">{{ ticket.subjectLabel }}</div>
+                <div class="dark main-style font-regular">{{ ticket.subjectValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center">
+                <div class="darkest head-title font-bold">{{ ticket.priorityLabel }}</div>
+                <div class="dark main-style font-regular">{{ ticket.priorityValue }}</div>
+            </div>
+            <div class="flex flex-column align-items-center ">
+                <div class="darkest head-title pb-1 font-bold">{{ ticket.statusLabel }}</div>
+                <div class="yellowText px-3 py-1 status-value main-style font-regular">{{ ticket.statusValue }}</div>
+            </div>
+        </div>
+    </app-read-only>
+</div>
+<section class="ticket-details sm:px-8 px-3">
+
+    <div class="card-wrapper shadow-raised px-5 pt-4 pb-3 mb-3">
+       <p class="mt-0 mb-3 darkest font-bold"> {{"help.ticketDetail"| translate}}</p>
+       <p class="mt-0 mb-3 darkest font-semibold main-style-15"> {{"help.msg"| translate}}</p>
+        <p class="mt-0 mb-1 dark main-style-15 font-regular">لقد قمت بالدفع عن طريق البطاقة الائتمانية يوم [أدخل التاريخ] بمبلغ [أدخل المبلغ] لشراء المنتجات من المتجر الإلكتروني، ولكن حتى الآن لم يتم تحديث حالة الدفع في حسابي. أود الاستفسار عن حالة هذه الدفعة، وما إذا كانت </p>
+        <p class="mt-0  mb-2 dark main-style-15 font-regular">هناك أي مشكلات تتعلق بمعالجة الدفع أو تأخير في التحديث. أرجو إفادتي بأسرع وقت ممكن.</p>
+        <p class=" mb-2 darkest font-semibold main-style-15">  {{"help.file"| translate}}</p>
+        <p class="primary file-name font-serif main-style w-min cursor-pointer">image.pdf </p>
+    </div>
+
+     <div class="card-wrapper shadow-raised px-5 pt-4 pb-3 mb-3">
+       <p class="mt-0 mb-3 darkest font-bold"> {{"help.supportReply"| translate}}</p>
+       <p class="mt-0 mb-3 darkest font-semibold main-style-15 flex align-items-center gap-2   "><span> {{"help.msg"| translate}}</span> <span class="font-serif main-style dark">20/01/2025</span></p>
+        <p class="mt-0 mb-1 dark main-style-15 font-regular">شكرًا لتواصلك معنا. بعد مراجعة الدفعة الخاصة بك، تبين أنها تمت بنجاح ولكن قد يكون هناك تأخير بسيط في تحديث حالة الدفع على حسابك بسبب بعض الإجراءات التقنية. نرجو منك الانتظار لمدة 24 ساعة أخرى. إذا لم يتم </p>
+        <p class="mt-0  mb-2 dark main-style-15 font-regular">تحديث  الحالة بعد ذلك، يُرجى التواصل معنا مجددًا لإجراء المزيد من التحقق. نحن نعتذر عن أي إزعاج قد تسبب لك.</p>
+        <p class=" mb-2 darkest font-semibold main-style-15">  {{"help.file"| translate}}</p>
+        <p class="primary file-name font-serif main-style w-min cursor-pointer mb-4">image1.pdf </p>
+        <div class="new-reply pt-3">
+           <p class="mt-0 mb-3 darkest font-bold"> {{"help.yourReply"| translate}}</p>
+           @if(!replySent){
+            <div class="grid ">
+                <div class="md:col col-12">
+                <div class="label-wrapper">
+              <label
+                for="desc"
+                class="block darkest font-semibold mb-1 main-style"
+              >
+                {{ "help.desc" | translate }}</label
+              >
+              <p-floatLabel>
+               <textarea  class="w-12"
+                rows="3"
+                [(ngModel)]="helpText"
+                pInputTextarea 
+                [autoResize]="true">
+            </textarea>
+              </p-floatLabel>
+              <button class="p-button w-min mt-3"  (click)="confirmPopup()">{{ "help.send" | translate }}</button>
+            </div>
+              @if(showRequired){ 
+              <div class="flex align-items-center gap-2 w-12 "><img src="./assets/images/popup-exclamation.svg" alt="icon">
+                <span class="font-regular redDark main-style-15">{{ "help.reqMsg" | translate }}</span>
+              </div>
+            }
+                </div>
+                <div  class="md:col col-12">
+   <div class="label-wrapper">
+              <label
+                for="upload"
+                class="block darkest font-semibold mb-1 main-style"
+              >
+                {{ "help.attach" | translate }}</label
+              >
+              <p-floatLabel>
+                <div class="upload-wrapper flex flex-column align-items-center cursor-pointer py-2"
+             >
+             <div >
+
+               <img src="./assets/images/upload2.svg" alt="file">
+             </div>
+                  <p class="mt-0 mb-2 primary font-semibold main-style-15"> {{ "help.uploadShort" | translate }}</p>
+                  <p class="my-0 font-medium main-style dark max">{{"help.max" | translate}}</p>
+                  <input
+                    id="mail"
+                    required="true"
+                    type="file"
+                    multiple
+                     (change)="onFileChange($event)"
+                  />
+                </div>
+              </p-floatLabel>
+            </div>
+                   <div class="selected-files w-12 py-2">
+            @for (item of selectedFiles; track $index) {
+              <div class="file-wrapper  py-1 px-3 mb-2 flex align-items-center justify-content-between"  [class.err-border]="!isFileValid(item)">
+                <div class="flex align-items-center gap-2">
+                <img [src]="isFileValid(item) ? './assets/images/check-i.svg' : './assets/images/error-i.svg'" alt="icon">
+                 <span> {{item.name}}</span>
+                </div>
+                <i class="pi pi-times cursor-pointer" (click)="deleteFile($index)"></i>
+              </div>
+            }
+           @if(hasInvalidFiles && selectedFiles.length> 0){ 
+              <div class="flex align-items-center gap-2 w-12 "><img src="./assets/images/popup-exclamation.svg" alt="icon">
+                <span class="font-regular redDark main-style-15">{{ "help.errMsg" | translate }}</span>
+              </div>
+            }
+          </div>
+                </div>
+            </div>
+           }@else {
+            <p class="mt-0 mb-3 darkest font-semibold main-style-15"> {{"help.msg"| translate}}</p>
+            <p class="mt-0 mb-1 dark main-style-15 font-regular">{{helpText}}</p>
+           }
+        </div>
+    </div>
+
+
+</section>

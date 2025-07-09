@@ -1,0 +1,78 @@
+.table-container{
+    border: 1px solid var(--color-light);
+    border-radius: 8px;
+}
+
+.requests-folder{
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0.005em;
+}
+
+
+.no-data{
+height: 136px;
+}
+
+.view-details{
+    background-color: var(--color-yellowText);
+    color: white;
+    border:none;
+    border-radius: 6px ;
+    padding: 10px 20px;
+    font-family: "IBM Medium";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-wrap: nowrap;
+}
+
+
+.delete-btn{
+    background-color: var(--color-stroke1);
+    color: var(--color-redText);
+    border:1px solid var(--color-redStroke);
+    border-radius: 6px ;
+    padding: 10px 20px;
+    font-family: "IBM Medium";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-wrap: nowrap;
+}
+
+.receipe-btn{
+    background-color: var(--color-stroke1);
+    color: var(--color-darkest);
+    border:1px solid var(--color-light);
+    border-radius: 6px ;
+    padding: 10px 20px;
+    font-family: "IBM Medium";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    text-wrap: nowrap;
+}
+
+::ng-deep table .success .p-tag{
+    background: var(--color-greenFill);
+    font-family: "IBM Bold";
+    font-size: 14px;
+    line-height: 20px;
+    color: #085D3A;
+    text-wrap: nowrap;
+}
+
+::ng-deep table .danger  .p-tag{
+    background: var(--color-warningFill);
+    font-family: "IBM Bold";
+    font-size: 14px;
+    line-height: 20px;
+    color: #93370D;
+    text-wrap: nowrap;
+
+}
+
+::ng-deep table .p-tag .pi{
+    font-size: 10px;
+}

@@ -1,0 +1,14 @@
+<div class="cart-card p-4 my-4">
+    <p class="mb-3 mt-0 darkest font-bold delivery-title">{{"checkout.wallet"| translate}}</p>
+    <div class="flex align-items-center">
+        <img src="./assets/images/wallet-sm.svg" alt="wallet">
+        <div class="wallet-balance darkest">
+            <p class="my-0 darkest main-style font-semibold">{{"checkout.walletBalance"| translate}}</p>
+            <p class="my-0 number "><span class="currency">SAR</span><span class="inline-block mr-1">10,000</span></p>
+        </div>
+        <label class="switch">
+            <input type="checkbox"  [(ngModel)]="checked" (ngModelChange)="onWalletChange()">
+            <span class="slider round"></span>
+          </label>
+    </div>
+</div>
